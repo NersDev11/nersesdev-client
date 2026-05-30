@@ -1,0 +1,51 @@
+export const skills = [
+  {
+    id: 1,
+    name: "html",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+  {
+    id: 2,
+    name: "css",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+  {
+    id: 3,
+    name: "js",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+  {
+    id: 4,
+    name: "react",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+  {
+    id: 5,
+    name: "docker",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+  {
+    id: 6,
+    name: "figma",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+  {
+    id: 7,
+    name: "node.js",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+  },
+];

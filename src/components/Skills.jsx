@@ -13,7 +13,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-gray-500 pt-25 pb-5 min-h-screen min-w-screen"
+      className="dark:bg-bg-tertiary pt-25 pb-5 min-h-screen min-w-screen transition-colors duration-500"
     >
       <h2 className="ml-4 text-4xl">myskills</h2>
       <p className="m-4">

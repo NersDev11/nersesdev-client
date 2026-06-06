@@ -1,8 +1,15 @@
+import { useTheme } from "../context/useTheme";
+
 function ButtonThemeToggle() {
+  const { theme, setTheme } = useTheme();
+
+  function toggleTheme() {
+    setTheme(theme === "light" ? "dark" : "light");
+  }
+
   return (
-    <button className="hover:cursor-pointer">
-      <span className="dark:hidden">🌙</span>
-      <span className="hidden dark:block">☀</span>
+    <button onClick={toggleTheme} className="hover:cursor-pointer mt-1 mx-3">
+      {theme === "light" ? "🌙" : " ☀"}
     </button>
   );
 }

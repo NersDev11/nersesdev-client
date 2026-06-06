@@ -8,24 +8,27 @@ import Logo from "./components/Logo";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { ThemeProvider } from "./context/ThemeProvider";
 
 function App() {
   return (
-    <>
-      <Header>
-        <Logo />
-        <Menu />
-      </Header>
-      <main className="text-stone-200 pt-22">
-        <Home />
-        <Skills />
-        <Projects />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-      <ButtonUp />
-    </>
+    <ThemeProvider>
+      <>
+        <Header>
+          <Logo />
+          <Menu />
+        </Header>
+        <main className=" dark:text-font-primary bg-bg-primary dark:bg-bg-primary pt-22">
+          <Home />
+          <Skills />
+          <Projects />
+          <About />
+          <Contact />
+        </main>
+        <Footer />
+        <ButtonUp />
+      </>
+    </ThemeProvider>
   );
 }
 

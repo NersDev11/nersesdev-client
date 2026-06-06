@@ -9,7 +9,7 @@ function ProjectCardOverview({ project }) {
   // }
 
   return (
-    <div className="h-[30%] w-[80%] ml-7 self-start border rounded py-4 px-6 flex flex-col gap-5 center backdrop-blur-md">
+    <div className="h-[30%] w-[80%] ml-7 self-start border rounded py-4 px-6 flex flex-col gap-5 center backdrop-blur-md dark:bg-bg-quaternary">
       <h3 className="text-3xl py-1">{project.name}</h3>
       <p className="">{project.preview}</p>
       <button

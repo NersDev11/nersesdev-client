@@ -2,7 +2,7 @@ function About() {
   return (
     <section
       id="about"
-      className="bg-gray-500 pb-5 pt-23 min-h-screen min-w-screen"
+      className="dark:bg-bg-tertiary pb-5 pt-23 min-h-screen min-w-screen transition-colors duration-500"
     >
       <h2 className="ml-4 text-lg uppercase">About - Jajja</h2>
       <h3 className="ml-4 mt-5 text-3xl">An Everlasting Journey </h3>

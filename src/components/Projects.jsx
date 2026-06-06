@@ -3,7 +3,14 @@ import { projects } from "../misc/projects";
 
 function Projects() {
   return (
-    <section id="projects" className="bg-gray-500 min-h-screen pb-5 pt-23 ">
+    <section
+      id="projects"
+      className="dark:bg-bg-secondary min-h-screen pb-5 pt-23 transition-colors duration-500"
+    >
+      {/* <section
+      id="projects"
+      className="dark:bg-bg-secondary min-h-screen pb-5 pt-23 transition-colors duration-500"
+    > */}
       <h1 className="ml-4 text-3xl py-1">My Projects</h1>
       <p className="m-4">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit vitae at

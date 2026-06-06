@@ -1,6 +1,139 @@
 @import "tailwindcss";
 
+:root {
+  /* --color-bg-primary: rgba(8, 126, 164, 0.2); */
+  --color-bg-primary: rgb(189, 233, 247);
+  /* --color-bg-secondary: #fff; */
+  --background-image-bg-secondary: conic-gradient(
+    from -90deg at 110% 100%,
+    rgb(255, 255, 255) 0deg,
+    rgb(235, 236, 240) 90deg,
+    rgb(235, 236, 240) 360deg
+  );
+  --background-image-bg-tertiary: conic-gradient(
+    from 90deg at -10% 100%,
+    rgb(188, 193, 205) 0deg,
+    rgb(188, 193, 205) 90deg,
+    rgb(255, 255, 255) 360deg
+  );
+  /* --color-bg-tertiary: #023e7d; */
+  --color-bg-accent: #023e7d;
+  --color-bg-contact: rgba(8, 126, 164, 0.7);
+  --color-bg-quaternary: "";
+  --color-bg-header: #fff;
+  --color-button-submit: #fff;
+  --color-button-up-hover: rgb(4, 73, 146);
+
+  --color-form-field: "";
+  --color-form-bg: "";
+  --color-form-button: "";
+  --color-form-button-highlight: "";
+
+  --color-font-primary: #000;
+  --color-font-secondary: "";
+  --color-font-tertiary: "";
+  --color-font-form: rgb(112, 116, 118);
+  --color-font-form-input: rgb(255, 255, 255);
+}
+
+.dark {
+  --color-bg-primary: rgb(1, 1, 1);
+  /* --color-bg-secondary: #33415c; */
+  /* --color-bg-secondary: #5c677d; */
+  /* --color-bg-secondary: #1c1e21; ?? */
+  /* --color-bg-secondary: rgba(52, 58, 70, 0.8); */
+  --background-image-bg-secondary: conic-gradient(
+    from -90deg at 110% 100%,
+    rgb(43, 48, 59) 0deg,
+    rgb(22, 24, 29) 90deg,
+    rgb(22, 24, 29) 360deg
+  );
+  --background-image-bg-tertiary: conic-gradient(
+    from 90deg at -10% 100%,
+    rgb(43, 48, 59) 0deg,
+    rgb(43, 48, 59) 90deg,
+    rgb(22, 24, 29) 360deg
+  );
+  /* --color-bg-secondary: #23272f; */ /* --color-bg-tertiary: #0353a4; */
+  /* --color-bg-tertiary: #0074a6; */
+  /* --color-bg-tertiary: #149eca; */
+  /* --color-bg-tertiary: conic-gradient(
+      from_-90deg_at_110%_100%,
+      rgb(43, 48, 59) _0deg,
+      rgb(22, 24, 29) _90deg,
+      rgb(22, 24, 29) _360deg
+    ); */
+
+  --color-bg-accent: rgb(2, 62, 125);
+  /* --color-bg-tertiary: #001845; */
+  --color-bg-quaternary: #020618;
+  --color-bg-contact: #000;
+  --color-bg-header: #d6d3d1;
+  --color-button-submit: #fff;
+  --color-button-up-hover: rgb(4, 73, 146);
+
+  /* --color-form-field: #1d293d; */
+  --color-form-field: rgba(255, 255, 255, 0.15);
+  /* --color-form-bg: #020618; */
+  --color-form-bg: rgba(255, 255, 255, 0.05);
+  --color-form-button: "";
+  --color-form-button-highlight: "";
+  --color-font-primary: #e7e5e4;
+  --color-font-secondary: "";
+  --color-font-tertiary: "";
+  --color-font-form: rgb(112, 116, 118);
+  --color-font-form-input: rgb(255, 255, 255);
+}
+
+@theme {
+  /* Fonts */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Jost", sans-serif;
+  --font-accent: "";
+
+  /* Colors */
+
+  --color-bg-primary: var(--color-bg-primary);
+  /* --color-bg-secondary: var(--color-bg-secondary); */
+  --background-image-bg-secondary: var(--color-bg-secondary);
+  --background-image-bg-tertiary: var(--color-bg-teritary);
+  /* --color-bg-tertiary: var(--color-bg-tertiary); */
+  --color-bg-accent: var(--color-bg-accent);
+  --color-bg-quaternary: var(--color-bg-quaternary);
+  --color-bg-contact: var(--color-bg-contact);
+  --color-bg-header: var(--color-bg-header);
+  --color-button-submit: var(--color-button-submit);
+  --color-button-up-hover: var(--color-button-up-hover);
+
+  --color-form-bg: var(--color-form-field);
+  --color-form-field: var(--color-form-primary);
+
+  --color-font-primary: var(--color-font-primary);
+  --color-font-form: var(--color-font-form);
+  --color-font-form-input: var(--color-font-form-input);
+
+  /* --color-text: var(--color-bg-primary);
+   
+  
+    --color-form-button: var(--color-bg-primary);
+    --color-form-button-highlight: var(--color-bg-primary);
+    
+    --color-font-secondary: var(--color-bg-primary);
+    --color-font-tertiary: var(--color-bg-primary); */
+}
+
 * {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-heading;
 }

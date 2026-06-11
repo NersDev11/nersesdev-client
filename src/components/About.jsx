@@ -4,7 +4,7 @@ function About() {
       id="about"
       className="dark:bg-bg-tertiary pb-5 pt-23 min-h-screen min-w-screen transition-colors duration-500"
     >
-      <h2 className="ml-4 text-lg uppercase">About - Jajja</h2>
+      <h2 className="ml-4 text-lg uppercase">About Me - Nerses Balaian</h2>
       <h3 className="ml-4 mt-5 text-3xl">An Everlasting Journey </h3>
       <p className="mx-4 mt-7">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rerum

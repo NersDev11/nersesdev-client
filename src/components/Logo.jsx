@@ -1,14 +1,20 @@
-import logo from "../assets/nlogo.png";
+// import logo from "../assets/nlogo.png";
+import logoLight from "../assets/logolight.png";
+import logoDark from "../assets/logoDark.png";
+
 // import logo2 from "../assets/nlogo2.png";
 
-function Logo() {
+function Logo({ scrolled }) {
+  const logo = scrolled ? logoDark : logoLight;
+
   return (
-    // <div className="uppercase text-4xl font-semibold pt-5 pb-1">jajja</div>
-    <img
-      src={logo}
-      alt=""
-      className="w-[224px] h-[45px] md:w-[269px] md:h-[53px] lg:w-[292px] lg:h-[58px] mt-2 "
-    />
+    <a href="#home">
+      <img
+        src={logo}
+        alt=""
+        className="w-[224px] h-[45px] md:w-[269px] md:h-[53px] lg:w-[292px] lg:h-[58px] mt-4 "
+      />
+    </a>
   );
 }
 

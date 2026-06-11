@@ -1,7 +1,7 @@
 function DesktopMenu() {
   return (
-    <div className="hidden md:flex md:flex-row md:gap-10 md:justify-center md:pt-5">
-      <div className="flex gap-6">
+    <div className="hidden lg:flex lg:flex-row lg:justify-center lg:pt-5 lg:pl-15 2xl:pl-10">
+      <div className="flex lg:gap-5 2xl:gap-10">
         <p>
           <a href="#home">home</a>
         </p>

@@ -1,12 +1,12 @@
 export const projects = [
   {
     id: 1,
-    imgPreview: "",
+    imgPreview: "project1.jpg",
     imgMain: "",
     name: "Brandubh",
     preview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque quaerat consectetur. Libero quia quod nostrum eveniet labore nemo",
-    h3: "My Project1",
+    heading: "My Project1",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, repudiandae. In id laborum et velit voluptas nesciunt error facilis, blanditiis sit veniam sunt eaque cumque explicabo fugit quod fugiat perferendis!",
     platform: "",
@@ -16,12 +16,12 @@ export const projects = [
   },
   {
     id: 2,
-    imgPreview: "",
+    imgPreview: "project1.jpg",
     imgMain: "",
     name: "SteamLibrarian",
     preview:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque quaerat consectetur. Libero quia quod nostrum eveniet labore nemo",
-    h3: "My Project2",
+    heading: "My Project2",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, repudiandae. In id laborum et velit voluptas nesciunt error facilis, blanditiis sit veniam sunt eaque cumque explicabo fugit quod fugiat perferendis!",
     platform: "",
@@ -36,7 +36,7 @@ export const projects = [
   //   name: "Project 3",
   //   preview:
   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque quaerat consectetur. Libero quia quod nostrum eveniet labore nemo",
-  //   h3: "My Project3",
+  //   heading: "My Project3",
   //   description:
   //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, repudiandae. In id laborum et velit voluptas nesciunt error facilis, blanditiis sit veniam sunt eaque cumque explicabo fugit quod fugiat perferendis!",
   //   platform: "wordpress",

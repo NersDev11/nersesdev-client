@@ -4,7 +4,10 @@ import heroImg from "../assets/hero7.png";
 
 function Home() {
   return (
-    <section className="relative w-full min-h-[120svh] lg:min-h-[110svh] lg:h-screen overflow-hidden">
+    <section
+      id="home"
+      className="relative w-full min-h-[120svh] lg:min-h-[110svh] lg:h-screen overflow-hidden"
+    >
       {/* <section className="relative w-full min-h-screen overflow-hidden"> */}
       {/* Split background */}
       <div className="absolute inset-0 flex flex-col lg:flex-row overflow-hidden">

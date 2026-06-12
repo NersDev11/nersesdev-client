@@ -60,7 +60,7 @@ export const skills = [
       "Express gives you enough structure to build an app, and enough freedom to build a disaster. — Folklore",
   },
   {
-    id: 7,
+    id: 8,
     name: "GIT",
     imgLogo: "",
     imgBg: "",
@@ -69,7 +69,7 @@ export const skills = [
       "Git lets you travel through time. Usually to discover where you broke everything.  — Folklore",
   },
   {
-    id: 7,
+    id: 9,
     name: "OOP",
     imgLogo: "",
     imgBg: "",
@@ -78,7 +78,7 @@ export const skills = [
       "A junior developer writes a class. A mid-level developer writes an inheritance hierarchy. A senior developer asks if a function would be enough. — Folklore",
   },
   {
-    id: 8,
+    id: 10,
     name: "AI",
     imgLogo: "",
     imgBg: "",

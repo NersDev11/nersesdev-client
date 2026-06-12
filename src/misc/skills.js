@@ -5,6 +5,8 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote:
+      "Any application that can be written in JavaScript, will eventually be written in JavaScript. — Anders Hejlsberg",
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote:
+      "Everything is centered. Except the thing you need centered. — Folklore",
   },
   {
     id: 3,
@@ -19,6 +23,7 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote: "",
   },
   {
     id: 4,
@@ -26,6 +31,8 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote:
+      "I came for the components. I stayed because I forgot how state works. — Folklore",
   },
   {
     id: 5,
@@ -33,6 +40,7 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote: "If it works on your machine, ship your machine. — Solomon Hykes",
   },
   {
     id: 6,
@@ -40,6 +48,7 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote: "Design is a team sport. — Dylan Field",
   },
   {
     id: 7,
@@ -47,6 +56,8 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote:
+      "Express gives you enough structure to build an app, and enough freedom to build a disaster. — Folklore",
   },
   {
     id: 7,
@@ -54,6 +65,8 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote:
+      "Git lets you travel through time. Usually to discover where you broke everything.  — Folklore",
   },
   {
     id: 7,
@@ -61,5 +74,16 @@ export const skills = [
     imgLogo: "",
     imgBg: "",
     text: "",
+    quote:
+      "A junior developer writes a class. A mid-level developer writes an inheritance hierarchy. A senior developer asks if a function would be enough. — Folklore",
+  },
+  {
+    id: 8,
+    name: "AI",
+    imgLogo: "",
+    imgBg: "",
+    text: "",
+    quote:
+      "A junior developer writes a class. A mid-level developer writes an inheritance hierarchy. A senior developer asks if a function would be enough. — Folklore",
   },
 ];

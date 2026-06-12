@@ -1,6 +1,6 @@
 // import logo from "../assets/nlogo.png";
 import logoLight from "../assets/logolight.png";
-import logoDark from "../assets/logoDark.png";
+import logoDark from "../assets/logodark.png";
 
 // import logo2 from "../assets/nlogo2.png";
 

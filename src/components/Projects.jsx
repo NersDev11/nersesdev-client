@@ -5,7 +5,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="dark:bg-bg-secondary min-h-screen pb-5 pt-23 transition-colors duration-500"
+      className="dark:bg-bg-secondary min-h-screen pb-5 pt-23 px-10 lg:px-30 transition-colors duration-500"
     >
       {/* <section
       id="projects"

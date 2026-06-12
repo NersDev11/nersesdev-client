@@ -13,9 +13,9 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="dark:bg-bg-tertiary pt-25 pb-5 min-h-screen min-w-screen transition-colors duration-500"
+      className="dark:bg-bg-tertiary pt-25 pb-5 px-10 lg:px-30 min-h-screen min-w-screen transition-colors duration-500"
     >
-      <h2 className="ml-4 text-4xl">myskills</h2>
+      <h2 className="ml-4 text-4xl overflow-hidden">myskills</h2>
       <p className="m-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
         nostrum at nihil provident iure beatae amet libero, aut reprehenderit

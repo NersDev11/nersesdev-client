@@ -5,9 +5,9 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-bg-primary dark:bg-bg-primary pt-23 pb-5 min-h-screen transition-colors duration-500"
+      className="bg-bg-primary dark:bg-bg-primary pt-23 pb-5  min-h-screen transition-colors duration-500"
     >
-      <div className="lg:flex">
+      <div className="flex flex-col lg:flex-row">
         <MessageMe />
         <MyLinks />
       </div>

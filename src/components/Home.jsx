@@ -17,7 +17,7 @@ function Home() {
             <h1 className="text-5xl lg:text-6xl 2xl:text-7xl mt-60 mb-8 lg:-ml-50 pb-2 text-center  overflow-hidden">
               Hey, I'm Nerses)
             </h1>
-            <p className="text-4xl lg:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
+            <p className="text-3xl lg:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
               I'm a{"  "}
               <TypeAnimation
                 sequence={[

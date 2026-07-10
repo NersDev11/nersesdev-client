@@ -34,6 +34,10 @@
   --color-font-tertiary: "";
   --color-font-form: rgb(112, 116, 118);
   --color-font-form-input: rgb(255, 255, 255);
+
+  --color-border: #000;
+
+  --color-error: #82181a;
 }
 
 .dark {
@@ -83,6 +87,8 @@
   --color-font-tertiary: "";
   --color-font-form: rgb(112, 116, 118);
   --color-font-form-input: rgb(255, 255, 255);
+
+  --color-border: #6a7282;
 }
 
 @theme {
@@ -111,6 +117,10 @@
   --color-font-primary: var(--color-font-primary);
   --color-font-form: var(--color-font-form);
   --color-font-form-input: var(--color-font-form-input);
+
+  --color-border: var(--color-border);
+
+  --color-error: var(--color-error);
 
   /* --color-text: var(--color-bg-primary);
    

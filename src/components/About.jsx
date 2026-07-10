@@ -8,7 +8,7 @@ function About() {
   return (
     <section
       id="about"
-      className="dark:bg-bg-tertiary py-15 lg:py-20 px-10 lg:px-30  min-h-screen min-w-screen transition-colors duration-500 "
+      className="bg-bg-tertiary dark:bg-bg-tertiary py-15 lg:py-20 px-10 lg:px-30  min-h-screen min-w-screen transition-colors duration-500 "
     >
       <div className="flex flex-col lg:flex-row-reverse lg:gap-15 my-5 ">
         <div className="overflow-hidden ">

@@ -46,7 +46,7 @@ function App() {
           <Logo />
           <Menu />
         </Header>
-        <main className=" dark:text-font-primary">
+        <main className="text-font-primary dark:text-font-primary">
           <Home />
           <Skills />
           <Projects />

@@ -1,12 +1,32 @@
+import { useEffect, useState } from "react";
+import { FaCircleArrowUp } from "react-icons/fa6";
+
 function ButtonUp() {
+  const [isButtonUpVisible, setIsButtonUpVisible] = useState(false);
+
+  useEffect(() => {
+    function toggleButtonUpVisibility() {
+      if (window.scrollY > window.innerHeight / 3) setIsButtonUpVisible(true);
+      else setIsButtonUpVisible(false);
+    }
+
+    window.addEventListener("scroll", toggleButtonUpVisibility);
+
+    return () => window.removeEventListener("scroll", toggleButtonUpVisibility);
+  }, []);
+
   return (
-    <a
-      href="#home"
-      role="button"
-      className="fixed rounded-full hover:bg-button-up-hover bg-bg-accent right-6 bottom-9 py-2 px-4 text-xl cursor-pointer transition-colors duration-300"
-    >
-      &uarr;
-    </a>
+    <>
+      {isButtonUpVisible && (
+        <a
+          href="#home"
+          role="button"
+          className="fixed right-6 bottom-9 text-button-up dark:text-button-up hover:text-button-up-hover hover:dark:text-button-up-hover  text-4xl cursor-pointer transition-colors duration-300"
+        >
+          <FaCircleArrowUp />
+        </a>
+      )}
+    </>
   );
 }
 

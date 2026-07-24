@@ -22,7 +22,9 @@
   --color-bg-quaternary: "";
   --color-bg-header: #fff;
   --color-button-submit: #fff;
+
   --color-button-up-hover: rgb(4, 73, 146);
+  --color-button-up: rgb(2, 62, 125);
 
   --color-form-field: "";
   --color-form-bg: "";
@@ -76,7 +78,9 @@
   --color-bg-contact: #000;
   --color-bg-header: #d6d3d1;
   --color-button-submit: #fff;
-  --color-button-up-hover: rgb(4, 73, 146);
+  /* --color-button-up-hover: rgb(4, 73, 146); */
+  --color-button-up-hover: #fff;
+  --color-button-up: #e7e5e4;
 
   /* --color-form-field: #1d293d; */
   --color-form-field: rgba(255, 255, 255, 0.15);
@@ -110,8 +114,10 @@
   --color-bg-quaternary: var(--color-bg-quaternary);
   --color-bg-contact: var(--color-bg-contact);
   --color-bg-header: var(--color-bg-header);
+
   --color-button-submit: var(--color-button-submit);
   --color-button-up-hover: var(--color-button-up-hover);
+  --color-button-up: var(--color-button-up);
 
   --color-form-bg: var(--color-form-field);
   --color-form-field: var(--color-form-primary);

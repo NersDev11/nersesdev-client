@@ -42,6 +42,9 @@
   --color-border: #000;
 
   --color-error: #82181a;
+
+  --color-typing-animation-bg: rgb(2, 62, 125);
+  --color-typing-animation-font: #e7e5e4;
 }
 
 .dark {
@@ -95,13 +98,16 @@
   --color-font-form-input: rgb(255, 255, 255);
 
   --color-border: #6a7282;
+
+  --color-typing-animation-bg: #e7e5e4;
+  --color-typing-animation-font: #000;
 }
 
 @theme {
   /* Fonts */
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Jost", sans-serif;
-  --font-accent: "";
+  --font-accent: "Ubuntu Mono", sans-serif;
 
   /* Colors */
 
@@ -130,6 +136,9 @@
   --color-border: var(--color-border);
 
   --color-error: var(--color-error);
+
+  --color-typing-animation-bg: var(--color-typing-animation-bg);
+  --color-typing-animation-font: var(--color-typing-animation-font);
 
   /* --color-text: var(--color-bg-primary);
    

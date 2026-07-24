@@ -17,24 +17,26 @@ function Home() {
             <h1 className="text-5xl lg:text-6xl 2xl:text-7xl mt-60 mb-8 lg:-ml-50 pb-2 text-center  overflow-hidden">
               Hey, I'm Nerses)
             </h1>
-            <p className="text-3xl lg:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
+            <p className="text-4xl xl:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
               I'm a{"  "}
-              <TypeAnimation
-                sequence={[
-                  "Frontend ",
-                  1000,
-                  "Backend ",
-                  1000,
-                  "FullStack ",
-                  8000,
-                ]}
-                wrapper="span"
-                speed={300}
-                cursor={false}
-                repeat={Infinity}
-                style={{ overflow: "hidden" }}
-              />{" "}
-              Developer
+              <span className="inline-block align-text-bottom bg-typing-animation-bg dark:bg-typing-animation-bg rounded-sm text-typing-animation-font dark:text-typing-animation-font text-center h-12 lg:h-13 xl:h-16 2xl:h-18 min-w-44 md:min-w-50 lg:min-w-53 xl:min-w-60 2xl:min-w-70 leading-[1.3] lg:leading-[1.4] xl:leading-[1.3] 2xl:leading-[1.1] overflow-hidden font-accent ">
+                <TypeAnimation
+                  sequence={[
+                    "Frontend ",
+                    1000,
+                    "Backend ",
+                    1000,
+                    "FullStack ",
+                    6000,
+                  ]}
+                  wrapper="span"
+                  speed={300}
+                  cursor={false}
+                  repeat={Infinity}
+                  style={{ overflow: "hidden" }}
+                />{" "}
+              </span>
+              <span className="align-middle leading-none">{"  "}Developer</span>
             </p>
           </div>
         </div>

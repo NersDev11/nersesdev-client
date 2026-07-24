@@ -31,6 +31,8 @@
 
   --color-font-primary: #000;
   --color-font-secondary: "";
+  --color-font-accent: #e7e5e4;
+
   --color-font-tertiary: "";
   --color-font-form: rgb(112, 116, 118);
   --color-font-form-input: rgb(255, 255, 255);
@@ -115,6 +117,7 @@
   --color-form-field: var(--color-form-primary);
 
   --color-font-primary: var(--color-font-primary);
+  --color-font-accent: var(--color-font-accent);
   --color-font-form: var(--color-font-form);
   --color-font-form-input: var(--color-font-form-input);
 
@@ -130,6 +133,13 @@
     
     --color-font-secondary: var(--color-bg-primary);
     --color-font-tertiary: var(--color-bg-primary); */
+
+  --animate-skill-card: rotate 8s linear infinite;
+  @keyframes skill-card {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 * {

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant short (&:where(@media (min-width: 1200px)));
+/* @custom-variant short (&:where(@media (min-width: 1200px))); */
 /* @custom-variant short (&:where(@media (min-aspect-ratio: 2/1))); */
 /* @custom-variant short (&:where(@media (max-height: 500px) and (min-aspect-ratio: 2/1))); */
 
@@ -112,6 +112,7 @@
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Jost", sans-serif;
   --font-accent: "Ubuntu Mono", sans-serif;
+  --font-special: "Playfair Display SC", serif;
 
   /* Colors */
 

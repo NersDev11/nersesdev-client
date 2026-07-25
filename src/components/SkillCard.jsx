@@ -8,7 +8,7 @@ function SkillCard({ skill, bg, openedCard, onToggle }) {
   return (
     <div
       onClick={() => onToggle(skill.id)}
-      className={`border rounded-lg  ${isOpen ? "order-first col-span-2 lg:row-span-full bg-bg-secondary dark:bg-bg-secondary overflow-hidden min-h-[70vh]  flex flex-col " : "min-w-[40%] lg:min-w-[30%]"} mr-4 hover:cursor-pointer min-w-[26%] `}
+      className={`border rounded-lg  ${isOpen ? "order-first col-span-2 landscape:max-lg:col-span-1 lg:row-span-full landscape:row-span-full bg-bg-secondary dark:bg-bg-secondary overflow-hidden min-h-[70vh] flex flex-col " : "min-w-[40%] lg:min-w-[30%] "} mr-4 hover:cursor-pointer min-w-[26%]`}
       // className={`border rounded-lg  ${isOpen ? "order-first col-span-2 lg:row-span-full " : "min-w-[40%] lg:min-w-[30%]"} mr-4 hover:cursor-pointer min-w-[26%]`}
     >
       <div className="flex flex-row justify-center text-font-accent dark:text-font-accent">
@@ -23,9 +23,9 @@ function SkillCard({ skill, bg, openedCard, onToggle }) {
             }}
           >
             {/* <p className="">icon</p> */}
-            <div className="p-2">
+            <div className="p-2 landscape:max-lg:px-0">
               {i === 0 ? (
-                <Icon1 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl" />
+                <Icon1 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl landscape:max-lg:text-2xl" />
               ) : (
                 <Icon2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl" />
               )}
@@ -36,7 +36,9 @@ function SkillCard({ skill, bg, openedCard, onToggle }) {
               </h4>
             ) : (
               // <h4 className="hidden md:group-hover:block">{s.toUpperCase()}</h4>
-              <h4 className="xl:text-lg">{s.toUpperCase()}</h4>
+              <h4 className="xl:text-lg landscape:max-lg:text-sm">
+                {s.toUpperCase()}
+              </h4>
             )}
           </div>
         ))}
@@ -56,13 +58,13 @@ function SkillCard({ skill, bg, openedCard, onToggle }) {
             </p>
             <img
               src={bg}
-              alt="code example"
+              alt="Code Example"
               className="absolute opacity-70 bottom-0 w-full max-h-[45%] md:max-h-[60%] lg:max-h-[45%]"
             />
           </div>
 
           <hr />
-          <div className=" text-center p-3">
+          <div className="text-center p-3">
             <blockquote className="">{skill.quote}</blockquote>
           </div>
         </div>

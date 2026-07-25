@@ -24,7 +24,7 @@ function Header() {
     //   className={`transition-colors duration-300 fixed top-0 left-0 z-50 flex justify-between md:pb-7 px-2 w-full ${isScrolled ? (theme === "light" ? "bg-white" : "bg-stone-300") : theme === "light" ? "bg-transparent text-black" : "bg-transparent text-stone-200"}`}
     // >
     <header
-      className={`fixed top-0 left-0 z-50 flex justify-between md:pb-7 px-2 pl-4 2xl:pl-8 w-full ${isScrolled ? " dark:bg-bg-header bg-bg-header text-black" : "bg-transparent dark:bg-transparent text-font-primary dark:text-font-primary"} transition-colors duration-500`}
+      className={`fixed top-0 left-0 z-50 flex justify-between md:pb-7 px-2 pl-4 2xl:pl-8  landscape:pb-2 w-full ${isScrolled ? " dark:bg-bg-header bg-bg-header text-black" : "bg-transparent dark:bg-transparent text-font-primary dark:text-font-primary"} transition-colors duration-500`}
     >
       <Logo scrolled={isScrolled} />
       <Menu scrolled={isScrolled} />

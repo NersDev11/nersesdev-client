@@ -1,5 +1,5 @@
 // import { useEffect, useState } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 /////
 import { ThemeProvider } from "./context/ThemeProvider";
 import About from "./components/About";
@@ -18,26 +18,27 @@ import Modal from "./components/Modal";
 
 function App() {
   const [showSpecialMessage, setShowSpecialMessage] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  // useEffect(() => {
-  //   async function getCountry() {
-  //     try {
-  //       const res = await fetch("http://127.0.0.1:3000/api/country");
-  //       if (!res.ok) throw new Error("Network error");
-  //       const data = await res.json();
+  useEffect(() => {
+    async function getCountry() {
+      try {
+        const res = await fetch("http://127.0.0.1:3000/api/country");
+        if (!res.ok) throw new Error("Network error");
 
-  //       console.log(data);
+        const data = await res.json();
 
-  //       if (data.country?.toLowerCase() === "russia")
-  //         setShowSpecialMessage(true);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   }
+        console.log(data);
 
-  //   getCountry();
-  // }, []);
+        if (data.country?.toLowerCase() === "russia")
+          setShowSpecialMessage(true);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    getCountry();
+  }, []);
 
   return (
     <ThemeProvider>
@@ -60,10 +61,10 @@ function App() {
           setShowSpecialMessage={setShowSpecialMessage}
           showSpecialMessage={showSpecialMessage}
         />
-
+        {/* 
         <Modal isOpen={isOpen} onClose={setIsOpen}>
           <div>aajjajajajaja</div>
-        </Modal>
+        </Modal> */}
       </>
     </ThemeProvider>
   );

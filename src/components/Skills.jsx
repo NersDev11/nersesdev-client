@@ -57,7 +57,7 @@ function Skills() {
       </p>
 
       <div
-        className={`m-4 mt-20 grid gap-8 2xl:gap-12 lg:grid-rows-6 2xl:grid-rows-6  grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
+        className={`m-4 mt-20 grid gap-8 2xl:gap-12  lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
       >
         {skills.map((skill) => (
           <SkillCard

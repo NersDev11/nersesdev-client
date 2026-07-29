@@ -76,6 +76,7 @@
 import { useEffect, useState } from "react";
 import ButtonLangChange from "./ButtonLangChange";
 import ButtonThemeToggle from "./ButtonThemeToggle";
+import ButtonsContainer from "./ButtonsContainer";
 
 function MobileMenu({ open, setOpen, menuRef }) {
   const [activeSection, setActiveSection] = useState("home");
@@ -117,7 +118,7 @@ function MobileMenu({ open, setOpen, menuRef }) {
   if (!open) return null; // hide menu when closed
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row lg:hidden">
       <div className="text-black bg-white fixed top-18 left-0 pl-4 pt-2 pb-4 mt-1 flex flex-col gap-5 min-w-screen uppercase text-lg">
         <a href="#home" onClick={() => setOpen(false)}>
           <span
@@ -165,10 +166,11 @@ function MobileMenu({ open, setOpen, menuRef }) {
           </span>
         </a>
       </div>
-      <div className="fixed top-21 right-4 flex flex-row gap-5">
+      {/* <div className="fixed top-21 right-4 flex flex-row gap-5">
         <ButtonLangChange />
         <ButtonThemeToggle />
-      </div>
+      </div> */}
+      <ButtonsContainer styles={"fixed top-21 right-4 flex flex-row gap-5"} />
     </div>
   );
 }

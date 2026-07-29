@@ -12,7 +12,7 @@ export const projects = [
     platform: "",
     languages: ["HTML", "CSS", "TS"],
     url: "project1.com",
-    highlights: ["OOP", "AUTH", "EXPRESS.JS", "REACT", "SASS"],
+    highlights: ["EXPRESS.JS", "REACT", "AUTH", "SASS"],
   },
   {
     id: 2,

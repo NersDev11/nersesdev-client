@@ -17,7 +17,7 @@ import SpecialMessage from "./components/SpecialMessage";
 import Modal from "./components/Modal";
 
 function App() {
-  const [showSpecialMessage, setShowSpecialMessage] = useState(true);
+  const [showSpecialMessage, setShowSpecialMessage] = useState(false);
   // const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {

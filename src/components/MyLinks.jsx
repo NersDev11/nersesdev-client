@@ -1,8 +1,8 @@
-import emailIcon from "../assets/nemailicon.png";
-import facebookIcon from "../assets/nfaceicon.png";
-import linkedinIcon from "../assets/nlinkicon.png";
-import githubIcon from "../assets/ngiticon.png";
-import telegramIcon from "../assets/ntelicon.png";
+import emailIcon from "../assets/iconEmail.png";
+import facebookIcon from "../assets/iconFacebook.png";
+import linkedinIcon from "../assets/iconLinkedin.png";
+import githubIcon from "../assets/iconGithub.png";
+import telegramIcon from "../assets/iconTelegram.png";
 
 function MyLinks() {
   return (

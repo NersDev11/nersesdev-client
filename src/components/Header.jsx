@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import { useEffect, useState } from "react";
 import ButtonLangChange from "./ButtonLangChange";
 import ButtonThemeToggle from "./ButtonThemeToggle";
+import ButtonsContainer from "./ButtonsContainer";
 // import { useTheme } from "../context/useTheme";
 
 function Header() {
@@ -28,10 +29,15 @@ function Header() {
     >
       <Logo scrolled={isScrolled} />
       <Menu scrolled={isScrolled} />
-      <div className="hidden w-[224px]  md:w-[269px]  lg:w-[292px]  mt-3 lg:flex lg:justify-end lg:gap-4 2xl:mr-10">
+      {/* <div className="hidden w-[224px]  md:w-[269px]  lg:w-[292px]  mt-3 lg:flex lg:justify-end lg:gap-4 2xl:mr-10">
         <ButtonLangChange />
         <ButtonThemeToggle />
-      </div>
+      </div> */}
+      <ButtonsContainer
+        styles={
+          "hidden w-[224px]  md:w-[269px]  lg:w-[292px]  mt-3 lg:flex lg:justify-end lg:gap-4 2xl:mr-10"
+        }
+      />
     </header>
   );
 }

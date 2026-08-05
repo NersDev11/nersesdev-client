@@ -36,7 +36,7 @@ function SkillCard({ skill, bg, openedCard, onToggle }) {
               </h4>
             ) : (
               // <h4 className="hidden md:group-hover:block">{s.toUpperCase()}</h4>
-              <h4 className="xl:text-lg landscape:max-lg:text-sm">
+              <h4 className="xl:text-lg landscape:max-lg:text-sm pr-8 sm:pr-4 md:pr-2 lg:pr-0">
                 {s.toUpperCase()}
               </h4>
             )}

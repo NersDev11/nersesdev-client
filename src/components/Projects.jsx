@@ -5,7 +5,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-bg-secondary dark:bg-bg-secondary min-h-screen pb-5 pt-23 px-10 lg:px-30 transition-colors duration-500"
+      className="bg-bg-secondary dark:bg-bg-secondary min-h-screen pb-5 pt-23 px-5 sm:px-10 md:px-15 lg:px-30 transition-colors duration-500"
     >
       {/* <section
       id="projects"
@@ -18,7 +18,7 @@ function Projects() {
         nostrum facilis itaque necessitatibus repellendus, velit fugit ad quia?
         Explicabo?
       </p>
-      <div className="flex flex-col justify-center gap-3 mx-4">
+      <div className="flex flex-col justify-center gap-3 mx-0">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

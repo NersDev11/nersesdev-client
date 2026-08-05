@@ -46,7 +46,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-bg-tertiary dark:bg-bg-tertiary pt-25 pb-5 px-10 lg:px-30 min-h-screen min-w-screen transition-colors duration-500"
+      className="bg-bg-tertiary dark:bg-bg-tertiary pt-25 pb-5 px-5 sm:px-10 md:px-15 lg:px-30 min-h-screen min-w-screen transition-colors duration-500"
     >
       <h2 className="ml-4 text-4xl overflow-hidden">My Skills</h2>
       <p className="m-4">
@@ -57,7 +57,7 @@ function Skills() {
       </p>
 
       <div
-        className={`m-4 mt-20 grid gap-8 2xl:gap-12  lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
+        className={`m-4 mt-20 grid gap-y-6 gap-x-0 md:gap-x-2 2xl:gap-12  lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
       >
         {skills.map((skill) => (
           <SkillCard

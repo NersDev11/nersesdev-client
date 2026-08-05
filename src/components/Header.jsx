@@ -34,6 +34,7 @@ function Header() {
         <ButtonThemeToggle />
       </div> */}
       <ButtonsContainer
+        scrolled={isScrolled}
         styles={
           "hidden w-[224px]  md:w-[269px]  lg:w-[292px]  mt-5 lg:flex lg:justify-end lg:gap-4 2xl:mr-10"
         }

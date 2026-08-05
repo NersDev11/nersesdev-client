@@ -1,11 +1,11 @@
 import ButtonLangChange from "./ButtonLangChange";
 import ButtonThemeToggle from "./ButtonThemeToggle";
 
-function ButtonsContainer({ styles }) {
+function ButtonsContainer({ styles, scrolled }) {
   return (
     <div className={`${styles}`}>
-      <ButtonLangChange />
-      <ButtonThemeToggle />
+      <ButtonLangChange scrolled={scrolled} />
+      <ButtonThemeToggle scrolled={scrolled} />
     </div>
   );
 }

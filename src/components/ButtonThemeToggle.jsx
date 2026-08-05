@@ -2,7 +2,7 @@ import { useTheme } from "../context/useTheme";
 
 import { CgSun, CgMoon } from "react-icons/cg";
 
-function ButtonThemeToggle() {
+function ButtonThemeToggle({ scrolled }) {
   const { theme, setTheme } = useTheme();
 
   function toggleTheme() {
@@ -12,7 +12,7 @@ function ButtonThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="hover:cursor-pointer w-8 h-8 mx-3 rounded-lg text-xl flex justify-center items-center text-black hover:text-gray-700 md:text-font-accent md:hover:text-white transition-colors duration-300 transition-transform md:hover:-rotate-20"
+      className={`hover:cursor-pointer w-8 h-8 mx-3 rounded-lg text-xl flex justify-center items-center text-black  ${scrolled ? "lg:text-black lg:hover:text-gray-700" : "lg:text-font-accent lg:hover:text-white lg:dark:hover:text-white"}   transition-all duration-300  lg:hover:-rotate-20`}
     >
       {theme === "light" ? <CgMoon /> : <CgSun />}
     </button>

@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import heroImg from "../assets/hero7.png";
+import starsOrnament from "../assets/starsOrnament.png";
 
 function Home() {
   return (
@@ -35,7 +36,14 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8"></div>
+      {/* <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8"></div> */}
+      <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8 relative overflow-hidden">
+        <img
+          src={starsOrnament}
+          alt="Stars"
+          className="hidden lg:block w-40 xl:w-55 absolute right-2 xl:right-4 top-25"
+        />
+      </div>
       <div className="absolute lg:max-h-full w-[400px] lg:w-[415px] xl:w-[440px] 2xl:w-[480px]   bottom-0 left-1/2 lg:left-9/13 -translate-x-1/2  z-10 overflow-hidden">
         <img
           src={heroImg}

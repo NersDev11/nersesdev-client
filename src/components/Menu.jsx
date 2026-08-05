@@ -1,18 +1,23 @@
 import { useRef, useState } from "react";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
+// import MobileMenu from "./MobileMenu2";
+import HamburgerMenu from "./HamburgerMenu";
 
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
   return (
-    <div className="uppercase font-semibold pt-2" ref={menuRef}>
+    <div className="uppercase font-semibold pt-2 " ref={menuRef}>
       <button
-        className="cursor-pointer lg:hidden border rounded my-5 mr-1 py-3 px-4 landscape:max-lg:p-0 "
+        className="cursor-pointer lg:hidden rounded mb-2  landscape:max-lg:p-0 "
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? "-" : "+"}
+        <HamburgerMenu
+        // isMenuOpened={isMenuOpen}
+        // setIsMenuOpened={setIsMenuOpen}
+        />
       </button>
       {isMenuOpen && (
         <MobileMenu

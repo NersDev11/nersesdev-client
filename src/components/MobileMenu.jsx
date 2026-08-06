@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ButtonLangChange from "./ButtonLangChange";
 import ButtonThemeToggle from "./ButtonThemeToggle";
 import ButtonsContainer from "./ButtonsContainer";
+import { useTranslation } from "react-i18next";
 
 const navItems = [
   { name: "home", color: "bg-sky-500" },
@@ -12,6 +13,8 @@ const navItems = [
 ];
 
 function MobileMenu({ open, setOpen, menuRef }) {
+  const { t } = useTranslation();
+
   const [activeSection, setActiveSection] = useState("home");
   // const [open, setOpen] = useState(true);
 
@@ -60,7 +63,7 @@ function MobileMenu({ open, setOpen, menuRef }) {
               className="relative block text-sm xl:text-base px-1 py-3 xl:px-3 xl:py-4 uppercase tracking-[0.2em]  [perspective:1000px] overflow-hidden"
             >
               <span className="block transition-colors duration-200  z-1111">
-                {item.name}
+                {t(`menu.${item.name}`)}
               </span>
               <span
                 className={`absolute left-[-1px] xl:left-[8px] rounded top-[15%] xl:top-[21%] px-0.5 pl-1 py-1 text-white ${item.color} origin-left transition-transform duration-500 ease-out ${
@@ -69,7 +72,7 @@ function MobileMenu({ open, setOpen, menuRef }) {
                     : "-translate-x-full pointer-events-none"
                 }`}
               >
-                {item.name}
+                {t(`menu.${item.name}`)}
               </span>
             </a>
           </li>

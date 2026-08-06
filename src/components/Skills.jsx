@@ -15,6 +15,7 @@ import db from "../assets/db.png";
 import ai from "../assets/ai.png";
 import cloud from "../assets/cloud.png";
 import testing from "../assets/testing.png";
+import { useTranslation } from "react-i18next";
 
 const bgs = {
   js,
@@ -34,6 +35,8 @@ const bgs = {
 // import node from '../assets/node.png';
 
 function Skills() {
+  const { t } = useTranslation();
+
   const [openedCard, setOpenedCard] = useState(1);
 
   // const numSkills = skills.length;
@@ -48,7 +51,7 @@ function Skills() {
       id="skills"
       className="bg-bg-tertiary dark:bg-bg-tertiary pt-25 pb-5 px-5 sm:px-10 md:px-15 lg:px-30 min-h-screen min-w-screen transition-colors duration-500"
     >
-      <h2 className="ml-4 text-4xl overflow-hidden">My Skills</h2>
+      <h2 className="ml-4 text-4xl overflow-hidden">{t("skills.h2")}</h2>
       <p className="m-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
         nostrum at nihil provident iure beatae amet libero, aut reprehenderit

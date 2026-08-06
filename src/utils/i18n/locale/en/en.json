@@ -1,0 +1,49 @@
+{
+  "menu": {
+    "home": "home",
+    "skills": "skills",
+    "projects": "projects",
+    "about": "about",
+    "contact": "contact"
+  },
+  "hero": {
+    "greeting": "Hey, I'm Nerses",
+    "i'm": "I'm a",
+    "developer": "Developer"
+  },
+  "skills": {
+    "h2": "My Skills"
+  },
+  "projects": {
+    "h2": "My Projects"
+  },
+  "about": {
+    "h2": "About Me - Nerses Balaian",
+    "title": "A Lifelong Journey",
+    "p1.1": "I'm",
+    "p1.2": "years old and live in Kyiv, Ukraine. While my education is in philosophy and theology, and my professional background includes marketing and sales, I eventually discovered my true passion in the tech industry and programming. Web development has always fascinated me. I love the frontend as the first impression people have of a service, while the backend feels like a mysterious clockwork mechanism quietly powering everything behind the scenes.",
+    "p2": "What I enjoy most about programming, especially today, is that it encourages me to learn something new every day, develop new skills, and gain fresh perspectives on things I thought I already understood. It's a journey I truly enjoy, and one I believe will never really end...",
+    "p3": "In my free time, I enjoy taking long walks in nature, learning new skills, exploring gaming worlds, playing chess, or searching for hidden gems in the night sky with my telescope."
+  },
+  "contact": {
+    "links": "My Links",
+    "h3": "Get in Touch",
+    "h4": "Message Me",
+    "let's": "Let's build something great together)",
+    "thanks": "Thank you for contacting me!",
+    "inTouch": "I'll be in touch soon)",
+    "name": "First name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your message",
+    "sending": "Sending...",
+    "send": "Send Message",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Message",
+    "error": "An error occcured while sending message",
+    "tryAgain": "Please try again!"
+  },
+  "footer": ""
+}

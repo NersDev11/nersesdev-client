@@ -22,6 +22,8 @@
 //   );
 // }
 
+import { useTranslation } from "react-i18next";
+
 // export default DesktopMenu;
 
 // const navItems = [
@@ -81,23 +83,26 @@ const navItems = [
 ];
 
 export default function DesktopMenu() {
+  const { t } = useTranslation();
+
   return (
     <div className="hidden lg:flex lg:flex-row lg:justify-center lg:pt-2 lg:pl-13 xl:pl-11 2xl:pl-9">
-      <ul className="flex lg:gap-1 xl:gap-0 w-full">
+      <ul className="flex lg:gap-2 xl:gap-0 w-full text-nowrap">
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li key={item.name} className="w-fit flex justify-center ">
             <a
               href={`#${item.name}`}
-              className="group relative block text-sm xl:text-base px-1 py-3 xl:px-3 xl:py-4 uppercase tracking-[0.2em]  [perspective:1000px] overflow-hidden"
+              className="group relative block text-sm xl:text-base px-1 py-3 xl:px-3 xl:py-4 uppercase tracking-[0.2em]  [perspective:1000px] overflow-hidden w-fit"
             >
-              <span className="block transition-colors duration-200 group-hover:text-white z-1111">
-                {item.name}
+              <span className="block transition-colors duration-200 group-hover:text-white z-1111 w-fit pr-3 xl:pr-0">
+                {/* {item.name} */}
+                {t(`menu.${item.name}`)}
               </span>
 
               <span
                 className={`
                   absolute left-[-1px] xl:left-[8px] rounded top-[15%] xl:top-[21%]
-                  px-0.5 pl-1 py-1 text-white
+                  px-0.5 pl-1.5  py-1  text-white
                   ${item.color}
                   origin-top
                   [backface-visibility:hidden]
@@ -106,7 +111,7 @@ export default function DesktopMenu() {
                   group-hover:[transform:rotateX(0deg)_translateZ(0)]
                 `}
               >
-                {item.name}
+                {t(`menu.${item.name}`)}
               </span>
             </a>
           </li>

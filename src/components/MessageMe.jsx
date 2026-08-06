@@ -1,7 +1,10 @@
 import { useState } from "react";
 import ServerError from "./ServerError";
+import { useTranslation } from "react-i18next";
 
 function MessageMe() {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -65,15 +68,15 @@ function MessageMe() {
   return (
     <div className="relative transition-colors duration-500 border-gray-600 dark:bg-form-bg border rounded-lg min-w-[90%] landscape:max-lg:w-[80%] md:min-w-auto  mx-4 lg:mx-15 2xl:mx-35 mt-16 lg:w-160 lg:flex-3 2xl:flex-1 overflow-hidden">
       <h3 className="text-lg font-light  ml-7 mt-5 mb-1 uppercase text-font-form dark:text-font-form">
-        Get in Touch
+        {t("contact.h3")}
       </h3>
-      <h4 className="ml-7 mb-3 text-4xl py-1">Message Me</h4>
-      <p className="ml-7 mb-6">Let's start our fruitful collaboration</p>
+      <h4 className="ml-7 mb-3 text-4xl py-1">{t("contact.h4")}</h4>
+      <p className="ml-7 mb-6">{t("contact.let's")}</p>
       {serverError && <ServerError handleClose={() => setServerError(false)} />}
       {isMessageSent ? (
         <p className="text-center mx-5 py-15 text-2xl overflow-hidden border-t-2 border-border dark:border-border flex flex-col gap-2">
-          <span className="overflow-hidden">Thank you for contacting me!</span>
-          <span className="overflow-hidden">I'll be in touch soon)</span>
+          <span className="overflow-hidden">{t("contact.thanks")}</span>
+          <span className="overflow-hidden">{t("contact.inTouch")})</span>
         </p>
       ) : (
         <form
@@ -82,11 +85,11 @@ function MessageMe() {
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col gap-2 ml-1 ">
-            <label htmlFor="name">First name</label>
+            <label htmlFor="name">{t("contact.name")}</label>
             <input
               className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
               type="text"
-              placeholder="Name *"
+              placeholder={`${t("contact.namePlaceholder")} *`}
               htmlFor="name"
               id="name"
               value={name}
@@ -100,7 +103,7 @@ function MessageMe() {
             <input
               className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
               type="text"
-              placeholder="Last Name *"
+              placeholder="last name"
               htmlFor="lastName"
               id="lastName"
               value={lastName}
@@ -108,11 +111,11 @@ function MessageMe() {
             />
           </div>
           <div className="flex flex-col gap-2 ml-1">
-            <label htmlFor="email">Your Email</label>
+            <label htmlFor="email">{t("contact.email")}</label>
             <input
               className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
               type="text"
-              placeholder="Email *"
+              placeholder={`${t("contact.emailPlaceholder")} *`}
               htmlFor="email"
               id="email"
               value={email}
@@ -121,11 +124,11 @@ function MessageMe() {
             />
           </div>
           <div className="flex flex-col gap-2 ml-1">
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject">{t("contact.subject")}</label>
             <input
               className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
               type="text"
-              placeholder="Subject *"
+              placeholder={`${t("contact.subjectPlaceholder")} *`}
               htmlFor="subject"
               id="subject"
               value={subject}
@@ -134,13 +137,14 @@ function MessageMe() {
             />
           </div>
           <div className="flex flex-col gap-2 ml-1">
-            <label htmlFor="message">Your message</label>
+            <label htmlFor="message">{t("contact.message")}</label>
             <textarea
               className="border-gray-500 border dark:bg-form-field w-[94%] h-30 p-2.5 rounded focus:outline-0 text-font-form-input"
               type="text"
               htmlFor="message"
               id="message"
-              placeholder="Message *"
+              // placeholder="Message *"
+              placeholder={`${t("contact.messagePlaceholder")} *`}
               value={text}
               required={true}
               onChange={(e) => setText(e.target.value)}
@@ -152,7 +156,7 @@ function MessageMe() {
             disabled={isLoading}
             className="bg-button-submit dark:bg-button-submit hover:border border-gray-500 ml-1 hover:bg-form-field cursor-pointer w-[94%] h-10 mb-6 rounded dark:text-black dark:hover:text-font-primary font-semibold  text-center transition-colors duration-300"
           >
-            {isLoading ? "Sending..." : "Send Message"}
+            {isLoading ? t("contact.sending") : t("contact.send")}
           </button>
         </form>
       )}

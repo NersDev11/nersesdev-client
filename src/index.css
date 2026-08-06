@@ -109,10 +109,11 @@
 
 @theme {
   /* Fonts */
-  --font-heading: "Space Grotesk", sans-serif;
-  --font-body: "Jost", sans-serif;
+  /* --font-heading-en: "Space Grotesk", sans-serif; */
+  --font-heading: "Exo 2", sans-serif;
+  /* --font-body: "Jost", sans-serif; */
+  --font-body: "Onest", sans-serif;
   --font-accent: "Ubuntu Mono", sans-serif;
-  --font-special: "Playfair Display SC", serif;
 
   /* Colors */
 

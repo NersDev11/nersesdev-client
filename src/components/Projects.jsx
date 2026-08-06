@@ -1,7 +1,10 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "../misc/projects";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="projects"
@@ -11,7 +14,7 @@ function Projects() {
       id="projects"
       className="dark:bg-bg-secondary min-h-screen pb-5 pt-23 transition-colors duration-500"
     > */}
-      <h1 className="ml-4 text-3xl py-1">My Projects</h1>
+      <h1 className="ml-4 text-3xl py-1">{t("projects.h2")}</h1>
       <p className="m-4">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit vitae at
         debitis assumenda! Earum ut minima molestias maiores reprehenderit sint

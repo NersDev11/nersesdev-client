@@ -6,7 +6,33 @@
 
 :root {
   /* --color-bg-primary: rgba(8, 126, 164, 0.2); */
-  --color-bg-primary: rgb(189, 233, 247);
+  /* --color-bg-primary: rgb(189, 233, 247); */
+  /* --background-image-bg-primary: linear-gradient(
+    to right,
+    var(--color-cyan-100),
+    var(--color-blue-300),
+    var(--color-indigo-400)
+  ); */
+
+  /* --background-image-bg-primary: linear-gradient(
+    to right,
+    var(--color-cyan-100),
+    var(--color-blue-300),
+    var(--color-indigo-400)
+  ); */
+  --background-image-bg-primary: linear-gradient(
+    135deg,
+    #d8dde5 0%,
+    #bac1ce 45%,
+    #97a4b5 100%
+  );
+  /* --background-image-bg-primary: linear-gradient(
+    to right,
+    var(--color-gray-600),
+    var(--color-blue-500),
+    var(--color-cyan-400)
+  ); */
+
   /* --color-bg-secondary: #fff; */
   --background-image-bg-secondary: conic-gradient(
     from -90deg at 110% 100%,
@@ -20,18 +46,58 @@
     rgb(188, 193, 205) 90deg,
     rgb(255, 255, 255) 360deg
   );
+
+  --background-image-bg-accent: linear-gradient(
+    135deg,
+    #0451b6 0%,
+    rgb(2, 41, 99) 45%,
+    #0f2d57 100%
+  );
+  /* --background-image-bg-accent: linear-gradient(
+    to right,
+    var(--color-gray-800),
+    var(--color-blue-700),
+    var(--color-gray-900)
+  ); */
+  /* --background-image-bg-accent: linear-gradient(
+    135deg,
+    rgb(12 18 30) 0%,
+    rgb(24 43 76) 50%,
+    rgb(48 77 120) 100%
+  ); */
+  /* --background-image-bg-accent: linear-gradient(
+    135deg,
+    #08111d 0%,
+    #0d203d 45%,
+    #16345f 100%
+  ); */
+  /* --background-image-bg-accent: linear-gradient(
+    135deg,
+    #08111d 0%,
+    #0d203d 45%,
+    #16345f 100%
+  ); */
   /* --color-bg-tertiary: #023e7d; */
-  --color-bg-accent: #023e7d;
+  /* --color-bg-accent: #023e7d; */
+  /* --gradient-accent: linear-gradient(
+    to right,
+    var(--color-gray-800),
+    var(--color-blue-700),
+    var(--color-gray-900)
+  ); */
+  /* --background-image-bg-accent: bg-linear-to-r from-gray-800 via-blue-700 to-gray-900; */
   --color-bg-contact: rgba(8, 126, 164, 0.7);
   --color-bg-quaternary: "";
   --color-bg-header: #fff;
-  --color-button-submit: #fff;
+  /* --color-button-submit: #b1b1b6; */
+  --color-button-submit: #848487;
 
   --color-button-up-hover: rgb(4, 73, 146);
   --color-button-up: rgb(2, 62, 125);
 
-  --color-form-field: "";
-  --color-form-bg: "";
+  --color-form-field: #fff;
+  /* --color-form-bg: #f7f9fc; */
+  --color-form-bg: rgb(247 249 252 / 0.95);
   --color-form-button: "";
   --color-form-button-highlight: "";
 
@@ -41,7 +107,11 @@
 
   --color-font-tertiary: "";
   --color-font-form: rgb(112, 116, 118);
-  --color-font-form-input: rgb(255, 255, 255);
+  /* --color-font-form-input: rgb(112, 116, 118); */
+  --color-font-form-input: rgb(51, 54, 54);
+
+  --color-font-form-button: #fff;
+  --color-font-form-button-hover: #000;
 
   --color-border: #000;
 
@@ -52,7 +122,37 @@
 }
 
 .dark {
-  --color-bg-primary: rgb(1, 1, 1);
+  /* --color-bg-primary: rgb(1, 1, 1); */
+  /* --background-image-bg-primary: linear-gradient(
+    to bottom right,
+    #0b0b0c,
+    #111214,
+    #18191c
+  ); */
+  /* --background-image-bg-primary: linear-gradient(
+    135deg,
+    #090909,
+    #0d121c 55%,
+    #161b22
+  ); */
+  /* --background-image-bg-primary: linear-gradient(
+    135deg,
+    #0d0d0d,
+    #151515 45%,
+    #202020
+  ); */
+  /* --background-image-bg-primary: linear-gradient(
+    to bottom right,
+    #06080d,
+    #0c1119,
+    #161d28
+  ); */
+  --background-image-bg-primary: linear-gradient(
+    135deg,
+    rgb(8 8 10) 0%,
+    rgb(15 17 22) 45%,
+    rgb(25 29 36) 100%
+  );
   /* --color-bg-secondary: #33415c; */
   /* --color-bg-secondary: #5c677d; */
   /* --color-bg-secondary: #1c1e21; ?? */
@@ -69,6 +169,13 @@
     rgb(43, 48, 59) 90deg,
     rgb(22, 24, 29) 360deg
   );
+
+  --background-image-bg-accent: linear-gradient(
+    135deg,
+    #08111d 0%,
+    #0d203d 45%,
+    #16345f 100%
+  );
   /* --color-bg-secondary: #23272f; */ /* --color-bg-tertiary: #0353a4; */
   /* --color-bg-tertiary: #0074a6; */
   /* --color-bg-tertiary: #149eca; */
@@ -79,7 +186,7 @@
       rgb(22, 24, 29) _360deg
     ); */
 
-  --color-bg-accent: rgb(2, 62, 125);
+  /* --color-bg-accent: rgb(2, 62, 125); */
   /* --color-bg-tertiary: #001845; */
   --color-bg-quaternary: #020618;
   --color-bg-contact: #000;
@@ -93,8 +200,8 @@
   --color-form-field: rgba(255, 255, 255, 0.15);
   /* --color-form-bg: #020618; */
   --color-form-bg: rgba(255, 255, 255, 0.05);
-  --color-form-button: "";
-  --color-form-button-highlight: "";
+  --color-font-form-button: #000;
+  --color-font-form-button-hover: #fff;
   --color-font-primary: #e7e5e4;
   --color-font-secondary: "";
   --color-font-tertiary: "";
@@ -116,13 +223,20 @@
   --font-accent: "Ubuntu Mono", sans-serif;
 
   /* Colors */
-
-  --color-bg-primary: var(--color-bg-primary);
+  /* ?? */
+  /* --color-bg-primary: var(--color-bg-primary); */
+  /* ??? */
   /* --color-bg-secondary: var(--color-bg-secondary); */
+  --background-image-bg-primary: var(--background-image-bg-primary);
   --background-image-bg-secondary: var(--color-bg-secondary);
   --background-image-bg-tertiary: var(--color-bg-teritary);
+  --background-image-bg-accent: var(--background-image-bg-accent);
   /* --color-bg-tertiary: var(--color-bg-tertiary); */
-  --color-bg-accent: var(--color-bg-accent);
+
+  /* ??? */
+  /* --color-bg-accent: var(--color-bg-accent); */
+  /* ???? */
+
   --color-bg-quaternary: var(--color-bg-quaternary);
   --color-bg-contact: var(--color-bg-contact);
   --color-bg-header: var(--color-bg-header);
@@ -138,6 +252,8 @@
   --color-font-accent: var(--color-font-accent);
   --color-font-form: var(--color-font-form);
   --color-font-form-input: var(--color-font-form-input);
+  --color-font-form-button: var(--color-font-form-button);
+  --color-font-form-button-hover: var(--color-font-form-button-hover);
 
   --color-border: var(--color-border);
 

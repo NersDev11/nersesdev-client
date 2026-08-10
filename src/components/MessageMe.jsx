@@ -66,7 +66,7 @@ function MessageMe() {
   }
 
   return (
-    <div className="relative transition-colors duration-500 border-gray-600 dark:bg-form-bg border rounded-lg min-w-[90%] landscape:max-lg:w-[80%] md:min-w-auto  mx-4 lg:mx-15 2xl:mx-35 mt-16 lg:w-160 lg:flex-3 2xl:flex-1 overflow-hidden">
+    <div className="relative transition-colors duration-500 border-gray-600 bg-form-bg dark:bg-form-bg border rounded-lg min-w-[90%] landscape:max-lg:w-[80%] md:min-w-auto  mx-4 lg:mx-15 2xl:mx-35 mt-16 lg:w-160 lg:flex-3 2xl:flex-1 overflow-hidden">
       <h3 className="text-lg font-light  ml-7 mt-5 mb-1 uppercase text-font-form dark:text-font-form">
         {t("contact.h3")}
       </h3>
@@ -85,9 +85,11 @@ function MessageMe() {
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col gap-2 ml-1 ">
-            <label htmlFor="name">{t("contact.name")}</label>
+            <label className="" htmlFor="name">
+              {t("contact.name")}
+            </label>
             <input
-              className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
+              className="border-gray-500 border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input  dark:text-font-form-input"
               type="text"
               placeholder={`${t("contact.namePlaceholder")} *`}
               htmlFor="name"
@@ -101,7 +103,7 @@ function MessageMe() {
           <div className="flex-col gap-2 ml-1 hidden">
             <label htmlFor="name">Last name</label>
             <input
-              className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
+              className="border-gray-500 border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input  dark:text-font-form-input"
               type="text"
               placeholder="last name"
               htmlFor="lastName"
@@ -113,7 +115,7 @@ function MessageMe() {
           <div className="flex flex-col gap-2 ml-1">
             <label htmlFor="email">{t("contact.email")}</label>
             <input
-              className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
+              className="border-gray-500 border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input  dark:text-font-form-input"
               type="text"
               placeholder={`${t("contact.emailPlaceholder")} *`}
               htmlFor="email"
@@ -126,7 +128,7 @@ function MessageMe() {
           <div className="flex flex-col gap-2 ml-1">
             <label htmlFor="subject">{t("contact.subject")}</label>
             <input
-              className="border-gray-500 border dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input"
+              className="border-gray-500 border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input  dark:text-font-form-input"
               type="text"
               placeholder={`${t("contact.subjectPlaceholder")} *`}
               htmlFor="subject"
@@ -139,7 +141,7 @@ function MessageMe() {
           <div className="flex flex-col gap-2 ml-1">
             <label htmlFor="message">{t("contact.message")}</label>
             <textarea
-              className="border-gray-500 border dark:bg-form-field w-[94%] h-30 p-2.5 rounded focus:outline-0 text-font-form-input"
+              className="border-gray-500 border bg-form-field dark:bg-form-field w-[94%] h-30 p-2.5 rounded focus:outline-0 text-font-form-input dark:text-font-form-input"
               type="text"
               htmlFor="message"
               id="message"
@@ -154,7 +156,7 @@ function MessageMe() {
           <button
             type="submit"
             disabled={isLoading}
-            className="bg-button-submit dark:bg-button-submit hover:border border-gray-500 ml-1 hover:bg-form-field cursor-pointer w-[94%] h-10 mb-6 rounded dark:text-black dark:hover:text-font-primary font-semibold  text-center transition-colors duration-300"
+            className="bg-button-submit dark:bg-button-submit hover:border border-gray-500 ml-1 hover:bg-form-field cursor-pointer w-[94%] h-10 mb-6 rounded text-font-form-button dark:text-font-form-button hover:text-font-form-button-hover dark:hover:text-font-form-button-hover font-semibold  text-center transition-colors duration-300"
           >
             {isLoading ? t("contact.sending") : t("contact.send")}
           </button>

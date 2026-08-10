@@ -39,7 +39,7 @@ function Home() {
                 style={{ overflow: "hidden" }}
               />{" "}
             </span>
-            <span className="pb-0.5 md:pb-0 md:pl-2 leading-none block mt-1 sm:mt-0 sm:inline-block overflow-hidden">
+            <span className="pb-0.5 md:pb-0 pl-1.5 md:pl-2 leading-none block mt-1 sm:mt-0 sm:inline-block overflow-hidden">
               {"  "}
               {t("hero.developer")}
             </span>
@@ -48,6 +48,7 @@ function Home() {
       </div>
       {/* <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8"></div> */}
       <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8 relative overflow-hidden">
+        {/* <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8 relative overflow-hidden"> */}
         <img
           src={starsOrnament}
           alt="Stars"

@@ -9,7 +9,8 @@ function MyLinks() {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-4 mb-12 ml-7 lg:ml-0 lg:mt-7 lg:flex-2 2xl:flex-1">
+    <div className="mt-4 mb-12  lg:mt-7 lg:flex-2 2xl:flex-2">
+      {/* <div className="mt-4 mb-12 ml-7 lg:ml-0 lg:mt-7 lg:flex-2 2xl:flex-1"> */}
       <h3 className="my-7 mx-4 p-1 text-2xl font-bold">{t("contact.links")}</h3>
       <ul className="mt-2 ml-4 flex flex-col gap-3 lg:gap-5 font-bold text-2xl">
         <li>

@@ -66,7 +66,8 @@ function MessageMe() {
   }
 
   return (
-    <div className="relative transition-colors duration-500 border-gray-600 bg-form-bg dark:bg-form-bg border rounded-lg min-w-[90%] landscape:max-lg:w-[80%] md:min-w-auto  mx-4 lg:mx-15 2xl:mx-35 mt-16 lg:w-160 lg:flex-3 2xl:flex-1 overflow-hidden">
+    <div className="relative transition-colors duration-500 border-gray-600 bg-form-bg dark:bg-form-bg border rounded-lg  w-full mt-16 lg:flex-3 2xl:flex-3 overflow-hidden">
+      {/* <div className="relative transition-colors duration-500 border-gray-600 bg-form-bg dark:bg-form-bg border rounded-lg min-w-[90%] landscape:max-lg:w-[80%] md:min-w-auto  mx-4 lg:mx-15 2xl:mx-35 mt-16 lg:w-160 lg:flex-3 2xl:flex-1 overflow-hidden"> */}
       <h3 className="text-lg font-light  ml-7 mt-5 mb-1 uppercase text-font-form dark:text-font-form">
         {t("contact.h3")}
       </h3>

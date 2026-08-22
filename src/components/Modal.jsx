@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 function Modal({ isOpen, onClose, styles, children }) {
   const overlayRef = useRef(null);
+  const childRef = useRef(null);
 
   useEffect(() => {
     function handleEsc(e) {
@@ -14,7 +15,8 @@ function Modal({ isOpen, onClose, styles, children }) {
   }, [onClose]);
 
   function handleCloseModal(e) {
-    if (e.target === overlayRef.current) onClose();
+    if (e.target === overlayRef.current || e.target === childRef.current)
+      onClose();
   }
 
   if (!isOpen) return null;
@@ -22,11 +24,13 @@ function Modal({ isOpen, onClose, styles, children }) {
   return ReactDOM.createPortal(
     <div
       ref={overlayRef}
-      className="fixed  inset-0 backdrop-blur-md flex justify-center items-center z-1111 bg-[rgba(0,0,0,0.3)]"
+      className="fixed  inset-0 backdrop-blur-md flex justify-center pt-5   z-1111 bg-[rgba(0,0,0,0.3)]"
       onClick={handleCloseModal}
     >
       {/* <div className=" w-[90svw] h-[90svh] rounded-lg">{children}</div> */}
-      <div className={`${styles}`}>{children}</div>
+      <div ref={childRef} className={`${styles}`}>
+        {children}
+      </div>
     </div>,
     document.getElementById("root"),
   );

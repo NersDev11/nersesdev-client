@@ -12,10 +12,23 @@
     "developer": "Developer"
   },
   "skills": {
-    "h2": "My Skills"
+    "h2": "My Skills",
+    "mainContent": ""
   },
   "projects": {
-    "h2": "My Projects"
+    "h2": "My Projects",
+    "mainContent": "I approach my personal projects as more than just an opportunity to practice and improve my skills. Above all, they are what inspire me to write code every day: the opportunity to create products and services that people can genuinely find interesting and useful in their everyday lives.\n\nI choose projects that allow me to bring together my interests while pushing me to explore and master new technologies. Every obstacle, challenge, or moment of asking myself, \"How am I going to build this?\" is simply another interesting problem waiting to be solved.",
+    "viewButton": "View Project",
+    "brandubh": {
+      "preview": "A multiplayer implementation of the ancient Celtic board game featuring real-time gameplay.",
+      "description": "Brandubh is a full-stack multiplayer implementation of the ancient Celtic board game.\n\n Users can create accounts, add friends, exchange messages, and play against either AI opponents or other players in real time or in daily game format. The application also allows players to revisit and review past games.\n\n Real-time gameplay and communication are powered by Socket.IO, while the backend uses Express, TypeScript, and PostgreSQL for server-side logic and persistent data. The frontend is developed with React and TypeScript, using CSS Modules and SCSS.",
+      "url": "Project under construction..."
+    },
+    "steamLibrarian": {
+      "preview": "An interactive Steam library analytics app with personalized statistics, and an AI-powered personality portrait.",
+      "description": "SteamLibrarian is a data-driven web application for analyzing public Steam libraries.\n\nUsers can visualize aggregated game data, including playtime distribution across genres, number of owned games per genre, achievement statistics, and the total price of their account.\n\nThe application focuses on transforming raw API data into structured, interactive insights through filtering, sorting, and data manipulation. Built with Next.js and Tailwind, the project uses a charting library to present complex data in an accessible way. A planned AI feature will analyze the user's game library to generate a humorous personality profile.",
+      "url": "Project under construction..."
+    }
   },
   "about": {
     "h2": "About Me - Nerses Balaian",

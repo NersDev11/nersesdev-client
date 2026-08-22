@@ -49,28 +49,32 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-bg-tertiary dark:bg-bg-tertiary pt-25 pb-5 px-5 sm:px-10 md:px-15 lg:px-30 min-h-screen min-w-screen transition-colors duration-500"
+      className="bg-bg-tertiary dark:bg-bg-tertiary pt-25 pb-5  min-h-screen min-w-screen transition-colors duration-500 flex flex-col items-center"
     >
-      <h2 className="ml-4 text-4xl overflow-hidden">{t("skills.h2")}</h2>
-      <p className="m-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-        nostrum at nihil provident iure beatae amet libero, aut reprehenderit
-        eaque aspernatur fuga natus. Voluptatum odio totam, deleniti tenetur
-        obcaecati culpa.
-      </p>
+      <div className="w-[90svw] sm:w-140 md:w-180 lg:w-240 xl:w-280 2xl:w-320 flex flex-col items-center">
+        <div className="">
+          <h2 className="text-4xl overflow-hidden">{t("skills.h2")}</h2>
+          <p className="my-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            nostrum at nihil provident iure beatae amet libero, aut
+            reprehenderit eaque aspernatur fuga natus. Voluptatum odio totam,
+            deleniti tenetur obcaecati culpa.
+          </p>
+        </div>
 
-      <div
-        className={`m-4 mt-20 grid gap-y-6 gap-x-0 md:gap-x-2 2xl:gap-12  lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4`}
-      >
-        {skills.map((skill) => (
-          <SkillCard
-            key={skill.id}
-            bg={bgs[skill.name]}
-            openedCard={openedCard}
-            onToggle={handleToggleCard}
-            skill={skill}
-          />
-        ))}
+        <div
+          className={`mt-20 grid gap-y-6 gap-x-0 md:gap-x-2 2xl:gap-12  lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 `}
+        >
+          {skills.map((skill) => (
+            <SkillCard
+              key={skill.id}
+              bg={bgs[skill.name]}
+              openedCard={openedCard}
+              onToggle={handleToggleCard}
+              skill={skill}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

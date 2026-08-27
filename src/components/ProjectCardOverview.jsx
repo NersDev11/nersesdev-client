@@ -12,7 +12,9 @@ function ProjectCardOverview({ project }) {
   return (
     <div className="w-full h-full border rounded  flex flex-col justify-between gap-2 backdrop-blur-md bg-bg-quaternary dark:bg-bg-quaternary">
       <div className="mt-5 mx-6">
-        <h3 className="text-2xl capitalize mb-4">{project.name}</h3>
+        <h3 translate="no" className="text-2xl capitalize mb-4">
+          {project.name}
+        </h3>
         <p className="text-base">{t(`projects.${project.name}.preview`)}</p>
       </div>
 
@@ -33,9 +35,10 @@ function ProjectCardOverview({ project }) {
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        styles={
-          "w-[90svw] 2xl:w-[80svw] min-h-[115svh] sm:min-h-[106svh] lg:min-h-[100svh]"
-        }
+        styles={"w-[90svw] 2xl:w-[80svw] h-fit"}
+        // styles={
+        //   "w-[90svw] 2xl:w-[80svw] min-h-[svh] sm:min-h-[106svh] h-[100svh]"
+        // }
       >
         <ProjectCardModal
           project={project}

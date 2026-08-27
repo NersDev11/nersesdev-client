@@ -12,13 +12,20 @@ import Logo from "./components/Logo";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+// import Skills from "./components/TempSkills";
 import SpecialMessage from "./components/SpecialMessage";
 
 import Modal from "./components/Modal";
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [showSpecialMessage, setShowSpecialMessage] = useState(false);
   // const [isOpen, setIsOpen] = useState(false);
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   useEffect(() => {
     async function getCountry() {

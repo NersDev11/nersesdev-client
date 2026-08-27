@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import heroImg from "../assets/hero7.png";
+import heroImg from "../assets/hero.png";
 import starsOrnament from "../assets/starsOrnament.png";
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +22,10 @@ function Home() {
               {t("hero.i'm")}
             </span>
             {"  "}
-            <span className="inline-block align-text-bottom bg-typing-animation-bg dark:bg-typing-animation-bg rounded-sm text-typing-animation-font dark:text-typing-animation-font text-center h-12 lg:h-13 xl:h-16 2xl:h-18 min-w-44 md:min-w-50 lg:min-w-50 xl:min-w-60 2xl:min-w-70 leading-[1.3] lg:leading-[1.4] xl:leading-[1.3] 2xl:leading-[1.1] overflow-hidden font-accent ">
+            <span
+              translate="no"
+              className="inline-block align-text-bottom bg-typing-animation-bg dark:bg-typing-animation-bg rounded-sm text-typing-animation-font dark:text-typing-animation-font text-center h-12 lg:h-13 xl:h-16 2xl:h-18 min-w-44 md:min-w-50 lg:min-w-50 xl:min-w-60 2xl:min-w-70 leading-[1.3] lg:leading-[1.4] xl:leading-[1.3] 2xl:leading-[1.1] overflow-hidden font-accent "
+            >
               <TypeAnimation
                 sequence={[
                   "Frontend ",

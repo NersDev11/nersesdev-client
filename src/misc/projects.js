@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     id: 2,
-    imgPreview: "project1.jpg",
+    imgPreview: "screenSteamLibrarian.png",
     imgMain: "",
     name: "steamLibrarian",
     preview: "",

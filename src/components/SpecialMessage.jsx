@@ -6,9 +6,10 @@ function SpecialMessage({ showSpecialMessage, setShowSpecialMessage }) {
     <Modal
       isOpen={showSpecialMessage}
       onClose={() => null}
-      styles={"min-w-[90svw] min-h-[90svh] rounded-lg bg-white"}
+      // styles={"min-w-[90svw] min-h-[90svh] rounded-lg bg-white"}
+      styles={"min-w-[90svw] h-[95svh] rounded-lg bg-white"}
     >
-      <div className="h-[90vh] flex flex-col font-special">
+      <div className="h-[95svh] flex flex-col font-special">
         {/* <img src="" alt="" /> */}
         <div className="h-1/2 w-full bg-sky-600 flex justify-center items-center">
           <p className="text-5xl text-gray-50 overflow-hidden font-bold">

@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next";
+import steamLibrarian from "../assets/screenSteamLibrarian.png";
 import projectImg1 from "../assets/project.jpg";
 
 import { IoCloseOutline } from "react-icons/io5";
 
 const images = {
   "project1.jpg": projectImg1,
+  "screenSteamLibrarian.png": steamLibrarian,
 };
 
 function ProjectCardModal({ project, handleModalToggle }) {
@@ -14,7 +16,7 @@ function ProjectCardModal({ project, handleModalToggle }) {
 
   return (
     // <div className="z-100 fixed top-0 left-0 min-h-screen bg-blue-300">
-    <div className=" lg:mt-25 h-fit  text-sm relative bg-[#f9f7f5] p-4 2xl:p-10 flex flex-col lg:flex-row gap-5">
+    <div className="lg:mt-25 h-fit  text-sm relative bg-[#f9f7f5] p-4 2xl:p-10 flex flex-col lg:flex-row gap-5">
       <button
         className="absolute top-2 right-2 hover:cursor-pointer text-3xl"
         onClick={handleModalToggle}
@@ -30,7 +32,7 @@ function ProjectCardModal({ project, handleModalToggle }) {
       </div>
       <div className="flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-2xl font-semibold mb-2 capitalize ">
+          <h3 translate="no" className="text-2xl font-semibold mb-2 capitalize">
             {project.name}
           </h3>
           <hr className="border-gray-400 border-t" />
@@ -48,7 +50,7 @@ function ProjectCardModal({ project, handleModalToggle }) {
               <span>Tech Stack:</span>
               <span>
                 {project.techStack.map((el, i) => (
-                  <span key={i}>
+                  <span key={i} translate="no">
                     {el}
                     {i !== project.techStack.length - 1 ? ", " : ""}
                   </span>
@@ -56,7 +58,7 @@ function ProjectCardModal({ project, handleModalToggle }) {
               </span>
             </li>
             <li className="flex flex-row justify-between">
-              <span>URL:</span>
+              <span translate="no">URL:</span>
               <span>{t(`projects.${project.name}.${project.url}`)}</span>
             </li>
           </ul>

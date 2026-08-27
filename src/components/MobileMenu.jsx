@@ -57,7 +57,7 @@ function MobileMenu({ open, setOpen, menuRef }) {
     <div className="flex flex-row lg:hidden">
       <ul className="text-black bg-white fixed top-18 left-0 pl-4 pt-1 pb-1 mt-1 flex flex-col gap-2 min-w-screen uppercase text-lg border-t-2 dark:border-t-0 border-black dark:border-none">
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li key={item.name} onClick={() => setOpen(false)}>
             <a
               href={`#${item.name}`}
               className="relative block text-sm xl:text-base px-1 py-3 xl:px-3 xl:py-4 uppercase tracking-[0.2em]  [perspective:1000px] overflow-hidden"

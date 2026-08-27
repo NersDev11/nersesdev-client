@@ -24,7 +24,7 @@ function Modal({ isOpen, onClose, styles, children }) {
   return ReactDOM.createPortal(
     <div
       ref={overlayRef}
-      className="fixed  inset-0 backdrop-blur-md flex justify-center pt-5   z-1111 bg-[rgba(0,0,0,0.3)]"
+      className="fixed inset-0 backdrop-blur-md flex justify-center pt-5   z-1111 bg-[rgba(0,0,0,0.3)]"
       onClick={handleCloseModal}
     >
       {/* <div className=" w-[90svw] h-[90svh] rounded-lg">{children}</div> */}

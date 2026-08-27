@@ -147,7 +147,6 @@ export const skills = [
     icons: [SiClaude],
     imgBg: "ai.png",
     text: "",
-    quote:
-      '"A junior developer writes a class. A mid-level developer writes an inheritance hierarchy. A senior developer asks if a function would be enough." — Folklore',
+    quote: "",
   },
 ];

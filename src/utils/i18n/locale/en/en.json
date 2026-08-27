@@ -13,7 +13,59 @@
   },
   "skills": {
     "h2": "My Skills",
-    "mainContent": ""
+    "mainContent": "I’m continuously developing my full-stack skills through hands-on projects, with JavaScript and TypeScript as my main programming languages. My knowledge and experience cover the full web development process, from semantic HTML, responsive interfaces, and UI design to frontend architecture, APIs, databases, testing, and deployment. React, Next.js, Node.js, and Express are the main technologies I work with, supported by SQL, MongoDB, Git, Docker, and cloud platforms.\n\nI focus on OOP and software engineering principles to build clean and maintainable applications. I’m also learning to integrate various AI tools into my workflow to help me research, experiment, and tackle unfamiliar problems as I continue to grow as a developer.",
+    "js": {
+      "mainContent": "My JavaScript knowledge covers modern ES6+ syntax, asynchronous operations, promises, modules, event handling, API integration, and error handling.\n\nWith TypeScript, I work with interfaces, type aliases, generics, utility types, and advanced typing features to define clear data structures and write safer, more predictable, and maintainable code. I apply these skills throughout frontend and backend development to build reliable applications.",
+      "quote": "\"Any application that can be written in JavaScript, will eventually be written in JavaScript.\" — Anders Hejlsberg"
+    },
+    "css": {
+      "mainContent": "My CSS knowledge covers responsive layouts, Flexbox, Grid, positioning, transitions, animations, pseudo-elements, custom properties, and modern styling techniques.\n\nI use Tailwind CSS for efficient utility-based development, CSS Modules for component-scoped styles, and SCSS for reusable and structured stylesheets.\n\nI apply these tools to create responsive, consistent, maintainable, and visually polished interfaces across different screen sizes.",
+      "quote": "\"Everything is centered. Except the thing you need centered.\" — Folklore"
+    },
+    "html": {
+      "mainContent": "My HTML knowledge covers semantic elements, document structure, forms, tables, media, links, and accessibility-focused markup.\n\nI use meaningful HTML elements to create clear content hierarchies and well-structured pages that are easier to maintain and understand.\n\nI also consider accessibility, SEO, and proper document semantics when building interfaces, providing a solid foundation for styling and interactive functionality.",
+      "quote": "\"If your HTML isn't right, nothing else truly is.\" — Namrah Saeed"
+    },
+    "react": {
+      "mainContent": "My React knowledge covers component-based architecture, props, state management, hooks, event handling, conditional rendering, and reusable components.\n\nI work with React Hook Form for building and validating forms, React Router for client-side routing and navigation and Redux for managing complex state. With Next.js, I work with routing, layouts, server-side capabilities, API integration, and application structure.\n\nI focus on building modular, responsive, and maintainable interfaces with clear component organization and predictable application logic.",
+      "quote": "\"I came for the components. I stayed because I forgot how state works.\" — Folklore"
+    },
+    "node": {
+      "mainContent": "My Node.js and Express.js skills include building REST APIs, handling HTTP requests, working with middleware, routing, asynchronous operations, and integrating external services.\n\nI use structured approaches to controllers, services, validation, and centralized error handling to keep backend applications maintainable.\n\nI also work with authentication and authorization, environment configuration, databases, and API security. These tools allow me to build complete server-side applications that support modern frontend clients.",
+      "quote": "\"Express gives you enough structure to build an app, and enough freedom to build a disaster.\" — Folklore"
+    },
+    "oop": {
+      "mainContent": "My knowledge of object-oriented programming covers the core principles of encapsulation, abstraction, inheritance, and polymorphism.\n\nI work with classes, objects, constructors, access modifiers, interfaces, and composition to structure application logic and model complex systems.\n\nI also apply principles such as separation of concerns, single responsibility, and code reusability to create software that is easier to understand, test, maintain, and extend as requirements evolve.",
+      "quote": "\"A junior developer writes a class. A mid-level developer writes an inheritance hierarchy. A senior developer asks if a function would be enough.\" — Folklore"
+    },
+    "git": {
+      "mainContent": "My Git knowledge covers version control, branching, merging, rebasing, resolving conflicts, and maintaining a clean development history.\n\nI use feature branches to isolate changes, write meaningful commits, and work with remote repositories through platforms such as GitHub. I am familiar with pull requests, code reviews, .gitignore, and common Git workflows.\n\nI use Git to manage development safely, collaborate effectively, and keep projects organized throughout their lifecycle.",
+      "quote": "\"Git lets you travel through time. Usually to discover where you broke everything.\" — Folklore"
+    },
+    "db": {
+      "mainContent": "I work primarily with PostgreSQL and MongoDB, understanding the differences between relational and document-based data models and selecting an appropriate approach based on application requirements.\n\nWith PostgreSQL, I use Prisma for type-safe queries, schema definition, migrations, and managing relationships. With MongoDB, I use Mongoose for schema modeling, validation, querying, and document management. \n\nMy experience also includes CRUD operations, data relationships, indexing, and integrating databases with backend applications.",
+      "quote": "\"The SELECT statement can have so many nested clauses that it looks like a Victorian novel!\" — Joe Celko"
+    },
+    "testing": {
+      "mainContent": "I use Vitest and Jest to write unit and integration tests for application logic, functions, services, and backend functionality.\n\nWith React Testing Library, I test components, user interactions, forms, and asynchronous behavior while focusing on how users experience the interface.\n\nI am also familiar with end-to-end testing and validating complete application workflows.",
+      "quote": "\"If debugging is the process of removing software bugs, then programming must be the process of putting them in.\" — Edsger W. Dijkstra"
+    },
+    "docker": {
+      "mainContent": "My experience with containerization focuses primarily on Docker, including Dockerfiles, images, containers, volumes, networking, environment variables, and Docker Compose.\n\nI also have introductory experience with Kubernetes and understand its core concepts, such as pods, deployments, services, and the role of orchestration in managing containerized applications.",
+      "quote": "\"If it works on your machine, ship your machine.\" — Solomon Hykes"
+    },
+    "cloud": {
+      "mainContent": "I have a foundational understanding of AWS and Azure and the core concepts behind cloud application development and deployment.\n\nMy knowledge includes cloud computing, storage, networking, virtualized resources, environment configuration, and managed services.\n\nI am actively developing my hands-on experience with cloud platforms and learning how to use their services to build, deploy, and maintain reliable and scalable applications.",
+      "quote": "\"The interesting thing about cloud computing is that we've redefined cloud computing to include everything that we already do.\" — Richard Stallman"
+    },
+    "figma": {
+      "mainContent": "While I am not a UI/UX designer, I am comfortable working with Figma as part of the frontend development process. I can inspect design files, understand component structures, extract visual specifications, and translate layouts into responsive, pixel-accurate interfaces.\n\nThis allows me to collaborate effectively with designers and focus on turning their visual concepts into functional, accessible, and maintainable applications.",
+      "quote": "\"Design is a team sport.\" — Dylan Field"
+    },
+    "ai": {
+      "mainContent": "I approach AI-assisted development with the principle that AI is a tool, not the developer.\n\nMy primary foundation is my own knowledge of programming and problem-solving, while tools such as Claude and AI features in VS Code help accelerate the process.\n\nI use them to explore unfamiliar problems, test different approaches, generate ideas, and reduce repetitive work, while critically evaluating, understanding, and taking responsibility for the final code.",
+      "quote": "\"When your request is vague, AI doesn't give you a wrong answer. It gives you the average answer, the average of everything ever written on that topic.\" — Folklore"
+    }
   },
   "projects": {
     "h2": "My Projects",

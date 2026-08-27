@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "tailwind-scrollbar";
+
 /* @custom-variant short (&:where(@media (min-width: 1200px))); */
 /* @custom-variant short (&:where(@media (min-aspect-ratio: 2/1))); */
 /* @custom-variant short (&:where(@media (max-height: 500px) and (min-aspect-ratio: 2/1))); */
@@ -283,10 +285,12 @@
 * {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  @apply scrollbar-thin scrollbar-track-slate-800 dark:scrollbar-thumb-sky-700;
 }
 
 body {
   @apply font-body;
+  /* @apply scrollbar-thin scrollbar-track-sky-100; */
 }
 
 h1,

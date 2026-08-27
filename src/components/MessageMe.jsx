@@ -68,11 +68,11 @@ function MessageMe() {
   return (
     <div className="relative transition-colors duration-500 border-gray-600 bg-form-bg dark:bg-form-bg border rounded-lg  w-full mt-16 lg:flex-3 2xl:flex-3 overflow-hidden">
       {/* <div className="relative transition-colors duration-500 border-gray-600 bg-form-bg dark:bg-form-bg border rounded-lg min-w-[90%] landscape:max-lg:w-[80%] md:min-w-auto  mx-4 lg:mx-15 2xl:mx-35 mt-16 lg:w-160 lg:flex-3 2xl:flex-1 overflow-hidden"> */}
-      <h3 className="text-lg font-light  ml-7 mt-5 mb-1 uppercase text-font-form dark:text-font-form">
+      <h3 className="text-lg font-light  ml-5 mt-5 mb-1 uppercase text-font-form dark:text-font-form">
         {t("contact.h3")}
       </h3>
-      <h4 className="ml-7 mb-3 text-4xl py-1">{t("contact.h4")}</h4>
-      <p className="ml-7 mb-6">{t("contact.let's")}</p>
+      <h4 className="ml-5 mb-3 text-4xl py-1">{t("contact.h4")}</h4>
+      <p className="ml-5 mb-6">{t("contact.let's")}</p>
       {serverError && <ServerError handleClose={() => setServerError(false)} />}
       {isMessageSent ? (
         <p className="text-center mx-5 py-15 text-2xl overflow-hidden border-t-2 border-border dark:border-border flex flex-col gap-2">
@@ -82,7 +82,7 @@ function MessageMe() {
       ) : (
         <form
           action=""
-          className="flex flex-col gap-4 ml-6 text-font-form dark:text-font-form "
+          className="flex flex-col gap-4 ml-4.5 text-font-form dark:text-font-form "
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col gap-2 ml-1 ">
@@ -157,7 +157,7 @@ function MessageMe() {
           <button
             type="submit"
             disabled={isLoading}
-            className="bg-button-submit dark:bg-button-submit hover:border border-gray-500 ml-1 hover:bg-form-field cursor-pointer w-[94%] h-10 mb-6 rounded text-font-form-button dark:text-font-form-button hover:text-font-form-button-hover dark:hover:text-font-form-button-hover font-semibold  text-center transition-colors duration-300"
+            className="bg-button-submit dark:bg-button-submit hover:border border-gray-500 ml-1 hover:bg-form-field cursor-pointer w-[93%] h-10 mb-6 rounded text-font-form-button dark:text-font-form-button hover:text-font-form-button-hover dark:hover:text-font-form-button-hover font-semibold  text-center transition-colors duration-300"
           >
             {isLoading ? t("contact.sending") : t("contact.send")}
           </button>

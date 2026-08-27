@@ -13,18 +13,18 @@ function Home() {
     >
       <div className="bg-bg-primary dark:bg-bg-primary h-[800px] lg:h-full lg:w-5/8 ">
         <div className="lg:pl-20 xl:pl-25 xl:mt-20">
-          <h1 className="text-5xl lg:text-6xl 2xl:text-7xl mt-60 mb-8 lg:-ml-50 pb-2 text-center overflow-hidden text-nowrap">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl mt-60 mb-8 lg:-ml-50 pb-2 text-center overflow-hidden text-nowrap">
             {/* Hey, I'm Nerses) */}
             {t("hero.greeting")})
           </h1>
-          <h2 className="text-4xl xl:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
-            <span className="pb-0.5 sm:pb-0 inline-block  leading-none overflow-hidden">
+          <h2 className="text-3xl sm:text-4xl xl:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
+            <span className="pb-0.5 sm:pb-0 inline-block leading-none overflow-hidden">
               {t("hero.i'm")}
             </span>
             {"  "}
             <span
               translate="no"
-              className="inline-block align-text-bottom bg-typing-animation-bg dark:bg-typing-animation-bg rounded-sm text-typing-animation-font dark:text-typing-animation-font text-center h-12 lg:h-13 xl:h-16 2xl:h-18 min-w-44 md:min-w-50 lg:min-w-50 xl:min-w-60 2xl:min-w-70 leading-[1.3] lg:leading-[1.4] xl:leading-[1.3] 2xl:leading-[1.1] overflow-hidden font-accent "
+              className="inline-block align-text-bottom bg-typing-animation-bg dark:bg-typing-animation-bg rounded-sm text-typing-animation-font dark:text-typing-animation-font text-center h-10 sm:h-12 lg:h-13 xl:h-16 2xl:h-18 min-w-44 md:min-w-50 lg:min-w-50 xl:min-w-60 2xl:min-w-70 leading-[1.3] lg:leading-[1.4] xl:leading-[1.3] 2xl:leading-[1.1] overflow-hidden font-accent "
             >
               <TypeAnimation
                 sequence={[

@@ -59,7 +59,7 @@
       "quote": "\"The interesting thing about cloud computing is that we've redefined cloud computing to include everything that we already do.\" — Richard Stallman"
     },
     "figma": {
-      "mainContent": "While I am not a UI/UX designer, I am comfortable working with Figma as part of the frontend development process. I can inspect design files, understand component structures, extract visual specifications, and translate layouts into responsive, pixel-accurate interfaces.\n\nThis allows me to collaborate effectively with designers and focus on turning their visual concepts into functional, accessible, and maintainable applications.",
+      "mainContent": "I am comfortable working with Figma as part of the frontend development process. I can inspect design files, understand component structures, extract visual specifications, and translate layouts into responsive, pixel-accurate interfaces.\n\nThis will allow me to collaborate effectively with designers and focus on turning their visual concepts into functional, accessible, and maintainable applications.",
       "quote": "\"Design is a team sport.\" — Dylan Field"
     },
     "ai": {
@@ -73,7 +73,7 @@
     "viewButton": "View Project",
     "brandubh": {
       "preview": "A multiplayer implementation of the ancient Celtic board game featuring real-time gameplay.",
-      "description": "Brandubh is a full-stack multiplayer implementation of the ancient Celtic board game.\n\n Users can create accounts, add friends, exchange messages, and play against either AI opponents or other players in real time or in daily game format. The application also allows players to revisit and review past games.\n\n Real-time gameplay and communication are powered by Socket.IO, while the backend uses Express, TypeScript, and PostgreSQL for server-side logic and persistent data. The frontend is developed with React and TypeScript, using CSS Modules and SCSS.",
+      "description": "Brandubh is a full-stack multiplayer implementation of the ancient Celtic board game.\n\n Users can create accounts, add friends, exchange messages, and play against either AI opponents or other players in real time or in daily game format. The application also allows players to revisit and review past games.\n\n Real-time gameplay and communication are powered by Socket.IO, while the backend uses Express, TypeScript, and PostgreSQL for server-side logic and persistent data. The frontend is developed with React and TypeScript, using CSS Modules and Motion.",
       "url": "Project under construction..."
     },
     "steamLibrarian": {
@@ -107,8 +107,8 @@
     "emailPlaceholder": "Email",
     "subjectPlaceholder": "Subject",
     "messagePlaceholder": "Message",
-    "error": "An error occcured while sending message",
-    "tryAgain": "Please try again!"
+    "error": "An error occurred while sending your message.",
+    "tryAgain": "Please try again."
   },
   "footer": ""
 }

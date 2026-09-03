@@ -39,7 +39,7 @@ function About() {
             </p>
             <img
               src={theme === "dark" ? ornamentLight : ornamentDark}
-              alt="stars ornament"
+              alt=""
               className="xl:absolute bottom-0 right-0"
             />
           </div>

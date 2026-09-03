@@ -13,6 +13,7 @@ function Menu({ scrolled }) {
       <button
         className="cursor-pointer lg:hidden rounded mb-2  landscape:max-lg:p-0 "
         onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Open/Close menu"
       >
         <HamburgerMenu
           isMenuOpened={isMenuOpen}

@@ -1,8 +1,8 @@
 export const projects = [
   {
     id: 1,
-    imgPreview: "project1.jpg",
-    imgMain: "",
+    imgPreview: "screenBrandubh",
+    imgBG: "brandubhBG.png",
     name: "brandubh",
     preview: "preview",
     heading: "My Project1",
@@ -15,7 +15,7 @@ export const projects = [
   {
     id: 2,
     imgPreview: "screenSteamLibrarian.png",
-    imgMain: "",
+    imgBG: "steamLibrarianBG.png",
     name: "steamLibrarian",
     preview: "",
     heading: "My Project2",

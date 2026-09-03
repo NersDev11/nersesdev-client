@@ -22,6 +22,7 @@ function ButtonUp() {
           href="#home"
           role="button"
           className="fixed right-6 bottom-9 text-button-up dark:text-button-up hover:text-button-up-hover hover:dark:text-button-up-hover  text-4xl cursor-pointer transition-colors duration-300"
+          aria-label="Up button"
         >
           <FaCircleArrowUp />
         </a>

@@ -11,7 +11,7 @@ function SkillCardOpened({ skill, bg, onOpen }) {
   return (
     <div
       onClick={() => onOpen(skill.id)}
-      className={`border rounded-lg order-first col-span-2 landscape:max-lg:col-span-1 lg:row-span-full landscape:row-span-full bg-bg-secondary dark:bg-bg-secondary overflow-hidden min-h-[70vh] flex flex-col  mr-4  min-w-[26%]`}
+      className={`border rounded-lg order-first col-span-2  lg:row-span-full landscape:row-span-full bg-bg-secondary dark:bg-bg-secondary overflow-hidden min-h-[70vh] flex flex-col  mr-4  min-w-[26%]`}
       // className={`border rounded-lg  ${isOpen ? "order-first col-span-2 lg:row-span-full " : "min-w-[40%] lg:min-w-[30%]"} mr-4 hover:cursor-pointer min-w-[26%]`}
     >
       <div className="flex flex-row justify-center text-font-accent dark:text-font-accent ">

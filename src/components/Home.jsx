@@ -14,7 +14,6 @@ function Home() {
       <div className="bg-bg-primary dark:bg-bg-primary h-[800px] lg:h-full lg:w-5/8 ">
         <div className="lg:pl-20 xl:pl-25 xl:mt-20">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl mt-60 mb-8 lg:-ml-50 pb-2 text-center overflow-hidden text-nowrap">
-            {/* Hey, I'm Nerses) */}
             {t("hero.greeting")})
           </h1>
           <h2 className="text-3xl sm:text-4xl xl:text-5xl 2xl:text-6xl text-center lg:-ml-40 py-1  overflow-hidden">
@@ -49,9 +48,8 @@ function Home() {
           </h2>
         </div>
       </div>
-      {/* <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8"></div> */}
+
       <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8 relative overflow-hidden">
-        {/* <div className="bg-bg-accent dark:bg-bg-accent h-[300px] lg:h-full lg:w-3/8 relative overflow-hidden"> */}
         <img
           src={starsOrnament}
           alt="Stars"

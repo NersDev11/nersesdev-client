@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import ButtonLangChange from "./ButtonLangChange";
-import ButtonThemeToggle from "./ButtonThemeToggle";
 import ButtonsContainer from "./ButtonsContainer";
 import { useTranslation } from "react-i18next";
 
@@ -16,7 +14,6 @@ function MobileMenu({ open, setOpen, menuRef }) {
   const { t } = useTranslation();
 
   const [activeSection, setActiveSection] = useState("home");
-  // const [open, setOpen] = useState(true);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -37,7 +34,6 @@ function MobileMenu({ open, setOpen, menuRef }) {
     return () => observer.disconnect();
   }, []);
 
-  // 🔑 Close menu when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {

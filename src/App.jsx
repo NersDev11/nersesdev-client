@@ -12,6 +12,7 @@ import Logo from "./components/Logo";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import TempSkills from "./components/TempSkills";
 // import Skills from "./components/TempSkills";
 import SpecialMessage from "./components/SpecialMessage";
 
@@ -57,6 +58,7 @@ function App() {
         <main className="text-font-primary dark:text-font-primary">
           <Home />
           <Skills />
+          <TempSkills />
           <Projects />
           <About />
           <Contact />

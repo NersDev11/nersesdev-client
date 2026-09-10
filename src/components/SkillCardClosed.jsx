@@ -1,25 +1,26 @@
-function SkillCardClosed({ skill, bg, onOpen }) {
+function SkillCardClosed({ skill, onOpen, onClickToScroll }) {
   const [Icon1, Icon2] = skill.icons;
-  // const isOpen = false;
-
-  console.log(bg);
 
   return (
     <div
       translate="no"
-      onClick={() => onOpen(skill.id)}
-      className={`border rounded-lg lg:min-w-[30%] mr-4 hover:cursor-pointer min-w-[26%]`}
+      onClick={() => {
+        onClickToScroll();
+        onOpen(skill.id);
+      }}
+      className={`border border-skill-card-closed-border dark:border-skill-card-closed-border rounded-lg lg:min-w-[30%] mr-4 hover:cursor-pointer min-w-[26%] shadow-[0_4px_12px_rgba(0,0,0,0.14),0_12px_28px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.35),0_14px_30px_rgba(0,0,0,0.22)] transition-all duration-300 h-full overflow-hidden`}
     >
-      <div className="flex flex-row justify-center text-font-accent dark:text-font-accent ">
+      <div className="flex flex-row justify-center text-font-accent dark:text-font-accent h-full">
         {skill.skills.map((s, i) => (
           <div
-            className={`${skill.skills.length === 1 ? "" : ""}  ${i === 1 ? "bg-[#023e7d] pl-5 md:pl-8 -ml-6 md:-ml-8" : "bg-black "} p-3 flex gap-2 flex-1 group justify-center items-center transition-all duration-300 hover:flex-2`}
+            className={`${skill.skills.length === 1 ? "" : ""}  ${i === 1 ? "bg-skill-card-secondary pl-5 md:pl-8 -ml-6 md:-ml-8" : "bg-skill-card-primary "} p-3 flex gap-2 flex-1 group justify-center items-center transition-all duration-300 hover:flex-2`}
             style={{
               clipPath:
                 skill.skills.length === 2 && i === 1
                   ? "polygon(24px 0, 100% 0, 100% 100%, 0 100%)"
                   : "none",
             }}
+            key={skill.skills.length - i}
           >
             <div className="p-2 landscape:max-lg:px-0">
               {i === 0 ? (

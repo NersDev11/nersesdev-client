@@ -18,10 +18,6 @@ function About() {
       id="about"
       className="bg-bg-tertiary dark:bg-bg-tertiary py-15 lg:py-20 min-h-screen min-w-screen transition-colors duration-500 flex flex-col items-center"
     >
-      {/* <section
-      id="about"
-      className="bg-bg-tertiary dark:bg-bg-tertiary py-15 lg:py-20 px-5 sm:px-10 md:px-15 lg:px-30  min-h-screen min-w-screen transition-colors duration-500 "
-    > */}
       <div className=" my-5 w-[90svw] sm:w-140 md:w-170 lg:w-230 xl:w-280 2xl:w-320 flex flex-col items-center">
         <div className="flex flex-col lg:flex-row-reverse  lg:gap-5 xl:gap-10 2xl:gap-15">
           <div className="overflow-hidden relative lg:flex-5 sm:mt-10 xl:mt-0">

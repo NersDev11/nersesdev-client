@@ -33,39 +33,31 @@ const bgs = {
   cloud,
 };
 
-function SkillsCardsField() {
+function SkillsCardsField({ onClickToScroll }) {
   const [CardOpen, setCardOpen] = useState(1);
-  const [CardClicked, setCardClicked] = useState(undefined);
 
   function handleOpenCard(id) {
-    console.log(id);
-    setCardClicked(id);
     setCardOpen(id);
   }
 
+  const openSkill = skills.find((s) => s.id === CardOpen);
+
   return (
     <div
-      className={`mt-20 grid gap-y-6 gap-x-0 md:gap-x-2 2xl:gap-12  lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 `}
+      className={`mt-20 grid gap-y-6 gap-x-0 md:gap-x-2 2xl:gap-12 lg:grid-rows-6 landscape:grid-rows-6 2xl:grid-rows-6 grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 relative`}
     >
-      {skills.map((skill) =>
-        skill.id === CardOpen ? (
-          <SkillCardOpened
-            key={skill.id}
-            bg={bgs[skill.name]}
-            // // openedCard={openedCard}
-            onOpen={handleOpenCard}
-            skill={skill}
-          />
-        ) : (
+      <SkillCardOpened skill={openSkill} bg={bgs[openSkill.name]} />
+
+      {skills
+        .filter((skill) => skill.id !== CardOpen)
+        .map((skill) => (
           <SkillCardClosed
             key={skill.id}
-            bg={bgs[skill.name]}
-            // // openedCard={openedCard}
             onOpen={handleOpenCard}
             skill={skill}
+            onClickToScroll={onClickToScroll}
           />
-        ),
-      )}
+        ))}
     </div>
   );
 }

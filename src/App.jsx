@@ -1,5 +1,6 @@
 // import { useEffect, useState } from "react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 /////
 import { ThemeProvider } from "./context/ThemeProvider";
 import About from "./components/About";
@@ -12,16 +13,11 @@ import Logo from "./components/Logo";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import TempSkills from "./components/TempSkills";
-// import Skills from "./components/TempSkills";
 import SpecialMessage from "./components/SpecialMessage";
-
-import Modal from "./components/Modal";
-import { useTranslation } from "react-i18next";
 
 function App() {
   const [showSpecialMessage, setShowSpecialMessage] = useState(false);
-  // const [isOpen, setIsOpen] = useState(false);
+
   const { i18n } = useTranslation();
 
   useEffect(() => {
@@ -35,8 +31,6 @@ function App() {
         if (!res.ok) throw new Error("Network error");
 
         const data = await res.json();
-
-        console.log(data);
 
         if (data.country?.toLowerCase() === "russia")
           setShowSpecialMessage(true);
@@ -58,7 +52,7 @@ function App() {
         <main className="text-font-primary dark:text-font-primary">
           <Home />
           <Skills />
-          <TempSkills />
+
           <Projects />
           <About />
           <Contact />
@@ -70,10 +64,6 @@ function App() {
           setShowSpecialMessage={setShowSpecialMessage}
           showSpecialMessage={showSpecialMessage}
         />
-        {/* 
-        <Modal isOpen={isOpen} onClose={setIsOpen}>
-          <div>aajjajajajaja</div>
-        </Modal> */}
       </>
     </ThemeProvider>
   );

@@ -96,7 +96,7 @@
     "h4": "Message Me",
     "let's": "Let's build something great together)",
     "thanks": "Thank you for contacting me!",
-    "inTouch": "I'll be in touch soon)",
+    "inTouch": "I'll be in touch soon",
     "name": "First name",
     "email": "Your Email",
     "subject": "Subject",
@@ -108,7 +108,20 @@
     "subjectPlaceholder": "Subject",
     "messagePlaceholder": "Message",
     "error": "An error occurred while sending your message.",
-    "tryAgain": "Please try again."
+    "tryAgain": "Please try again.",
+    "inputErrors": {
+      "nameRequired": "Please enter your name",
+      "nameTooShort": "Name must be at least 2 characters",
+      "nameTooLong": "Name must be under 60 characters",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Please enter a valid email address",
+      "subjectRequired": "Please enter a subject",
+      "subjectTooShort": "Subject must be at least 3 characters",
+      "subjectTooLong": "Subject must be under 100 characters",
+      "messageRequired": "Please enter a message",
+      "messageTooShort": "Message must be at least 10 characters",
+      "messageTooLong": "Message must be under 2000 characters"
+    }
   },
   "footer": ""
 }

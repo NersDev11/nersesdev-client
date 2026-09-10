@@ -10,7 +10,7 @@ function Menu({ scrolled }) {
 
   return (
     <div className="uppercase font-semibold py-2 " ref={menuRef}>
-      <button
+      <div
         className="cursor-pointer lg:hidden rounded mb-2  landscape:max-lg:p-0 "
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Open/Close menu"
@@ -20,7 +20,7 @@ function Menu({ scrolled }) {
           scrolled={scrolled}
           // setIsMenuOpened={setIsMenuOpen}
         />
-      </button>
+      </div>
       {isMenuOpen && (
         <MobileMenu
           open={isMenuOpen}

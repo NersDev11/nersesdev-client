@@ -2,6 +2,8 @@
 @plugin "tailwind-scrollbar";
 
 :root {
+  /* BG Colors */
+
   --background-image-bg-primary: linear-gradient(
     135deg,
     #d8dde5 0%,
@@ -19,8 +21,14 @@
     from 90deg at -10% 100%,
     rgb(188, 193, 205) 0deg,
     rgb(188, 193, 205) 90deg,
-    rgb(255, 255, 255) 360deg
+    rgb(245, 240, 240) 360deg
   );
+  /* --background-image-bg-tertiary: conic-gradient(
+    from 90deg at -10% 100%,
+    rgb(188, 193, 205) 0deg,
+    rgb(188, 193, 205) 90deg,
+    rgb(255, 255, 255) 360deg
+  ); */
 
   --background-image-bg-accent: linear-gradient(
     135deg,
@@ -30,7 +38,6 @@
   );
 
   --color-bg-contact: rgba(8, 126, 164, 0.7);
-  --color-bg-quaternary: "";
   --color-bg-header: #fff;
 
   --background-image-bg-project-modal: conic-gradient(
@@ -43,43 +50,45 @@
   --color-bg-mobile-menu: #fff;
 
   --color-button-submit: #75ace6;
-  /* --color-button-submit: #848487; */
-
-  /* --color-button-up-hover: rgb(4, 73, 146); */
   --color-button-up-hover: #4788ce;
   --color-button-up: #3875b6;
-  /* --color-button-up: rgb(2, 62, 125); */
 
   --color-form-field: #fff;
-
   --color-form-bg: rgb(247 249 252 / 0.95);
-  --color-form-button: "";
-  --color-form-button-highlight: "";
+
+  /* Font colors */
+
+  --color-skill-card-primary: #577094;
+  --color-skill-card-secondary: #023e7d;
 
   --color-font-primary: #000;
-  --color-font-secondary: "";
   --color-font-accent: #e7e5e4;
 
-  --color-font-tertiary: "";
   --color-font-project-section: #e7e5e4;
-  --color-font-form: rgb(112, 116, 118);
 
+  --color-font-form: rgb(112, 116, 118);
   --color-font-form-input: rgb(51, 54, 54);
 
   --color-font-form-button: #fff;
   --color-font-form-button-hover: #000;
 
+  --color-skill-card-closed-border: #6a7282;
+
   --color-border: #000;
   --color-border-projects: #6a7282;
   --color-link-border: rgb(112, 116, 118);
+  --color-border-input: #6a7282;
 
-  --color-error: #853132;
+  /* --color-error: #853132; */
+  --color-error: #fb2c36;
 
   --color-typing-animation-bg: rgb(2, 62, 125);
   --color-typing-animation-font: #e7e5e4;
 }
 
 .dark {
+  /* BG Colors */
+
   --background-image-bg-primary: linear-gradient(
     135deg,
     rgb(8 8 10) 0%,
@@ -107,9 +116,8 @@
     #16345f 100%
   );
 
-  --color-bg-quaternary: #020618;
+  /* --color-bg-quaternary: #020618; */
   --color-bg-contact: #000;
-
   --color-bg-header: #d2d4de;
 
   --background-image-bg-project-modal: conic-gradient(
@@ -122,26 +130,36 @@
   --color-bg-mobile-menu: #d2d4de;
 
   --color-button-submit: #fff;
-
   --color-button-up-hover: #fff;
   --color-button-up: #e7e5e4;
 
   --color-form-field: rgba(255, 255, 255, 0.15);
-
   --color-form-bg: rgba(255, 255, 255, 0.05);
 
-  --color-font-form-button: #000;
-  --color-font-form-button-hover: #fff;
+  /* Font colors */
+
+  --color-skill-card-primary: #000;
+  --color-skill-card-secondary: #023e7d;
+
   --color-font-primary: #e7e5e4;
-  --color-font-secondary: "";
-  --color-font-tertiary: "";
+  --color-font-accent: #e7e5e4;
+
   --color-font-project-section: #e7e5e4;
+
   --color-font-form: rgb(112, 116, 118);
   --color-font-form-input: rgb(255, 255, 255);
 
-  --color-border: #6a7282;
+  --color-font-form-button: #000;
+  --color-font-form-button-hover: #fff;
+
+  --color-skill-card-closed-border: #3b414b;
+
+  --color-border: #3b414c;
   --color-border-projects: #2c2c2e;
   --color-link-border: #1f3fb4;
+  --color-border-input: #6a7282;
+
+  --color-error: #fb2c36;
 
   --color-typing-animation-bg: #e7e5e4;
   --color-typing-animation-font: #000;
@@ -151,7 +169,6 @@
   /* Fonts */
 
   --font-heading: "Exo 2", sans-serif;
-
   --font-body: "Onest", sans-serif;
   --font-accent: "Ubuntu Mono", sans-serif;
   --font-special: "Playfair", serif;
@@ -176,6 +193,9 @@
   --color-form-bg: var(--color-form-field);
   --color-form-field: var(--color-form-primary);
 
+  --color-skill-card-primary: var(--color-skill-card-primary);
+  --color-skill-card-secondary: var(--color-skill-card-secondary);
+
   --color-typing-animation-bg: var(--color-typing-animation-bg);
   /* Font colors */
 
@@ -193,9 +213,11 @@
 
   /* Border colors */
 
+  --color-skill-card-closed-border: var(--color-skill-card-closed-border);
   --color-border: var(--color-border);
   --color-border-projects: var(--color-border-projects);
   --color-link-border: var(--color-link-border);
+  --color-border-input: var(--color-border-input);
 
   --animate-skill-card: rotate 8s linear infinite;
   @keyframes skill-card {
@@ -233,3 +255,68 @@ h3,
 h4 {
   @apply font-heading;
 }
+
+/* Glowing border */
+@keyframes glow-rotate {
+  0% {
+    --glow-angle: 0deg;
+  }
+  100% {
+    --glow-angle: 360deg;
+  }
+}
+
+@property --glow-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.glow-border {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden; /* now safe, since nothing escapes */
+  background-image: var(--background-image-bg-secondary);
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* no negative values */
+  border-radius: inherit;
+  padding: 2px; /* border thickness, contained inside */
+  background: conic-gradient(
+    from var(--glow-angle),
+    #3f3cec,
+    #440794,
+    #00d4ff,
+    #0508db
+  );
+  /* -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0); */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask-clip:
+    content-box, border-box; /* be explicit, some browsers infer differently */
+
+  animation: glow-rotate 4s linear infinite;
+  z-index: 1; /* sits above content since it's contained */
+  pointer-events: none;
+
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* .glow-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(12px);
+  opacity: 0.6;
+  z-index: -2;
+} */

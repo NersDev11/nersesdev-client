@@ -103,7 +103,7 @@ function MessageMe() {
   }
 
   async function sendMessage(message) {
-    const res = await fetch("http://localhost:3000/api/message", {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/message`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(message),
@@ -152,7 +152,7 @@ function MessageMe() {
           </div>
 
           {/* HoneyPot */}
-          <div className="flex-col gap-2 ml-1 ">
+          <div className="flex-col gap-2 ml-1 absolute -left-5555">
             <label htmlFor="lastName">Last name</label>
             <input
               className="border-border-input border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input  dark:text-font-form-input"

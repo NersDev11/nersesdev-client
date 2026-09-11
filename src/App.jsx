@@ -27,7 +27,8 @@ function App() {
   useEffect(() => {
     async function getCountry() {
       try {
-        const res = await fetch("http://127.0.0.1:3000/api/country");
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/country`);
+        // const res = await fetch("http://localhost:3000/api/country");
         if (!res.ok) throw new Error("Network error");
 
         const data = await res.json();

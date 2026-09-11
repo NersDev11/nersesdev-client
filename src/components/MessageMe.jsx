@@ -8,7 +8,7 @@ function MessageMe() {
   const { t } = useTranslation();
 
   const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [hpField, setHpField] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [text, setText] = useState("");
@@ -72,7 +72,7 @@ function MessageMe() {
 
     if (!validate()) return;
 
-    const message = { name, lastName, email, subject, text, date: Date.now() };
+    const message = { name, hpField, email, subject, text, date: Date.now() };
 
     setIsLoading(true);
     setServerError(false);
@@ -152,15 +152,19 @@ function MessageMe() {
           </div>
 
           {/* HoneyPot */}
-          <div className="flex-col gap-2 ml-1 absolute -left-5555">
-            <label htmlFor="lastName">Last name</label>
+          <div
+            className="flex-col gap-2 ml-1 absolute left-[9999px] top-[-9999px] w-px h-px overflow-hidden"
+            aria-hidden="true"
+          >
+            <label htmlFor="hp_field_a3x">Last name</label>
             <input
-              className="border-border-input border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input  dark:text-font-form-input"
+              className="border-border-input border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input dark:text-font-form-input"
               type="text"
               placeholder="last name"
-              id="lastName"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              id="hp_field_a3x"
+              name="hp_field_a3x"
+              value={hpField}
+              onChange={(e) => setHpField(e.target.value)}
               tabIndex={-1}
               autoComplete="off"
             />

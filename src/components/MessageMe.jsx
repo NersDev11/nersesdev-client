@@ -156,11 +156,11 @@ function MessageMe() {
             className="flex-col gap-2 ml-1 absolute left-[9999px] top-[-9999px] w-px h-px overflow-hidden"
             aria-hidden="true"
           >
-            <label htmlFor="hp_field_a3x">Last name</label>
+            <label htmlFor="hp_field_a3x">Favorite snack</label>
             <input
               className="border-border-input border bg-form-field dark:bg-form-field w-[94%] p-2.5 rounded focus:outline-0 text-font-form-input dark:text-font-form-input"
               type="text"
-              placeholder="last name"
+              placeholder="favorite snack"
               id="hp_field_a3x"
               name="hp_field_a3x"
               value={hpField}
